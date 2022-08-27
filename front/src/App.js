@@ -6,11 +6,13 @@ import {Route, Routes, BrowserRouter} from 'react-router-dom'
 import About from './pages/About';
 import Technology from './pages/Technology';
 import Cart from './pages/Cart';
+import Home from './components/Cart/Home';
 
 
 function App() {
   return (
     <>
+
     <BrowserRouter>
       <Header />
         <Routes>
@@ -20,6 +22,7 @@ function App() {
           <Route path='/basket' element={<Cart/>}/>
         </Routes>
       <Footer />
+    <Home/>
     </BrowserRouter>
     </>
   );
