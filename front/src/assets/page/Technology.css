@@ -15,9 +15,59 @@
     margin-left: 2rem;
     margin-top:20rem
 }
+.tecno1right span{
+    color: black;
+    font-weight: bold;
+}
 .tecno1right h1{
     font-size: 30px;
 }
 .tecno1right p{
     font-size: 15px;
+}
+.tecnocenter{
+    text-align: center;
+    margin-top: 5rem;
+}
+.tecnocenter h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+.tecnocenter p{
+    font-size: 14px;
+}
+.tecnocenter span{
+    color: black;
+    font-weight: bold;
+}
+.tecnocenter h6{
+    margin-top: 2rem;
+    font-size: 11px;
+}
+.techno3left img{
+    height: 845px;
+    width: 100%;
+    object-fit: cover;
+}
+.tecno3right img{
+    width: 100%;
+}
+#tecno3{
+    margin-top: 4rem;
+}
+.containers{
+    padding: 0 3rem !important;
+}
+#tecno4{
+    margin-top: 4rem;
+}
+.shield{
+    font-size: 25px;
+}
+.techno4left h3{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.techno4left p{
+    font-size: 13px;
 }
