@@ -12,7 +12,6 @@ const Home = () => {
    .catch(e => console.log(e))
   },[])
 
-   console.log(cart.images);
   // const productsArray = [...cart(20)].map(() => ({
   //   id: faker.datatype.uuid(),
   //   name: faker.commerce.productName(),
