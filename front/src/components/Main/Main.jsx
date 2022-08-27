@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Main.css'
 import axios from 'axios';
+import Context from '../../pages/Context';
 
 const Main = () => {
 
@@ -87,28 +88,8 @@ const Main = () => {
                 </div>
             </section>
             <section>
-                <div className="p4row mt-5 text-start">
-                    <div className="col-lg-3 col-12 p4leftmedia">
-                        <img src="https://cdn.shopify.com/s/files/1/1592/8017/products/Transit02_540x.jpg?v=1631027605" alt="sekil" />
-                        <h5 className='p4lefts'>Transit Travel Pro</h5>
-                        <span className='p4lefts'>$249.00</span>
-                    </div>
-                    <div className="col-lg-3 p4left">
-                        <img src="https://cdn.shopify.com/s/files/1/1592/8017/products/Transit02_540x.jpg?v=1631027605" alt="sekil" />
-                        <h5 className='p4lefts'>Transit Travel Pro</h5>
-                        <span className='p4lefts'>$249.00</span>
-                    </div>
-                    <div className="col-lg-3 p4left">
-                        <img src="https://cdn.shopify.com/s/files/1/1592/8017/products/Transit02_540x.jpg?v=1631027605" alt="sekil" />
-                        <h5 className='p4lefts'>Transit Travel Pro</h5>
-                        <span className='p4lefts'>$249.00</span>
-                    </div>
-                    <div className="col-lg-3 p4left">
-                        <img src="https://cdn.shopify.com/s/files/1/1592/8017/products/Transit02_540x.jpg?v=1631027605" alt="sekil" />
-                        <h5 className='p4lefts'>Transit Travel Pro</h5>
-                        <span className='p4lefts'>$249.00</span>
-                    </div>
-                </div>
+                <Context />
+               
             </section>
 
             <section id='mainp5'>

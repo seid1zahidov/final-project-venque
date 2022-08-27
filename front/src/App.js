@@ -5,8 +5,7 @@ import Main from './components/Main/Main';
 import {Route, Routes, BrowserRouter} from 'react-router-dom'
 import About from './pages/About';
 import Technology from './pages/Technology';
-import Cart from './pages/Cart';
-import Home from './components/Cart/Home';
+import Cart from './pages/Context';
 
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
           <Route path='/basket' element={<Cart/>}/>
         </Routes>
       <Footer />
-    <Home/>
     </BrowserRouter>
     </>
   );

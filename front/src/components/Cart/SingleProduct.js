@@ -1,8 +1,24 @@
 import React from 'react'
+import './style.css'
+import { useContext } from 'react'
+import {Cart} from '../../pages/Context'
+const SingleProduct = ({prod}) => {
 
-const SingleProduct = () => {
+  const [cart , Setcart] = useContext(Cart)
+
   return (
-    <div>SingleProduct</div>
+    <div className='products'>
+        <img src={prod.image} alt={prod.name} />
+        <div className="productsDesc">
+        <span style={{fontWeight: 700}}>{prod.name}</span>
+            <span>$ {prod.price.substring(0,3)}</span>
+        </div>
+        {cart.includes(prod) ? (
+          <button className='add' onClick={() => {Setcart(cart.filter(c => c.id !== prod.id))}}>Remove to Cart</button>
+        ) : (
+          <button className='add' onClick={() => {Setcart([...cart, prod])}}>Add to Cart</button>
+        )}
+    </div>
   )
 }
 
