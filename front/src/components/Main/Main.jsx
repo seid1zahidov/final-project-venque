@@ -12,7 +12,7 @@ const Main = () => {
     const [image6,setimage6] = useState([]); 
 
     useEffect(() => {
-        axios.get('http://localhost:3002/image')
+        axios.get('http://localhost:3004/image')
             .then(res => {
                 console.log(res.data.images);
                 Setimage1(res.data.images[0].image)

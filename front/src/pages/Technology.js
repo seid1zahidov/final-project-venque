@@ -37,7 +37,7 @@ const Technology = () => {
             </section>
 
             <section id='tecno4'>
-                <div className="containers">
+                <div className="containerss">
                     <div className="rows">
                         <div className="col-lg-4 techno4left">
                             <BsShieldCheck className='shield' />

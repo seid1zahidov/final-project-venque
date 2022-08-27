@@ -27,7 +27,9 @@ const Header = () => {
             </div>
             <div className="col-lg-2 col-4 text-end">
                 <BsPerson className='person' />
+                <Link to="/basket">
                   <BsBasketFill className='righticon' />
+                </Link>
             </div>
          </div>
     </div>
