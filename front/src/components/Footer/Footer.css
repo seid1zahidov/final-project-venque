@@ -1,0 +1,48 @@
+.footerleft{
+    margin-left: 2rem;
+}
+.footerleft h4{
+    margin-top: 3rem;
+    font-size: 12px;
+    font-weight: bold;
+}
+.instagram{
+    font-size: 25px;
+}
+.Footerrows{
+    display: flex;
+}
+.footerh4{
+    font-weight: bold;
+    margin-top: 2rem;
+}
+li{
+    margin-bottom: 10px;
+    list-style: none;
+    font-size: 12px;
+}
+.footerright h6{
+    margin-top: 5rem;
+    font-weight: bold;
+    font-size: 12px;
+}
+.footerright img{
+    width: 100%;
+}
+.footerrightt{
+    margin-top: 7rem;
+}
+.footerss{
+    margin-left: 40px;
+}
+.footerss button{
+    padding: 9px 17px 9px 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 3px;
+}
+.footerss input{
+    padding: 9px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid grey;
+}
