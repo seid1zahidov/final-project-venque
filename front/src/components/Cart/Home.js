@@ -14,15 +14,12 @@ const Home = () => {
   },[])
 
 
-  console.log(cart);
 
   return (
     <div>
-      {
-        cart && cart.map((e) => {
-          <SingleProduct prod={e} key = {e._id} />
-        })
-      }
+      {cart && cart.map((prod => (
+        <SingleProduct  prod={prod} key={prod._id} />
+      )))}
     </div>
     
   )

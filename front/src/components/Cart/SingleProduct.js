@@ -4,9 +4,10 @@ import { useContext } from 'react'
 import {Cart} from '../../pages/Context'
 const SingleProduct = ({prod}) => {
 
+
   const [cart , setCart] = useContext(Cart)
 
-  
+
 
   return (
     <div className='products'>
