@@ -11,6 +11,7 @@ const Cart = () => {
     setTotal(cart.reduce((acc,curr) => acc + Number(curr.price), 0))
   }, [cart])
 
+
   return (
     <div>
       <span style={{ fontSize:30 }}>My Cart</span>

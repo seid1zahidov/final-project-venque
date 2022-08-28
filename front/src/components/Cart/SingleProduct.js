@@ -6,6 +6,7 @@ const SingleProduct = ({prod}) => {
 
   const [cart , Setcart] = useContext(Cart)
 
+
   return (
     <div className='products'>
         <img src={prod.image} alt={prod.name} />
