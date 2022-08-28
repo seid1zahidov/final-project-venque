@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Main.css'
 import axios from 'axios';
 import Context from '../../pages/Context';
+import Home from '../Cart/Home';
 
 const Main = () => {
 
@@ -88,8 +89,7 @@ const Main = () => {
                 </div>
             </section>
             <section>
-                <Context />
-               
+                <Home />
             </section>
 
             <section id='mainp5'>

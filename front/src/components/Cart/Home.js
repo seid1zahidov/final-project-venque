@@ -5,26 +5,23 @@ import { useState } from 'react'
 import './style.css'
 import SingleProduct from './SingleProduct'
 const Home = () => {
-  const [cartt  , Setcart] = useState([])
+  const [cart  , setCart] = useState([])
 
   useEffect(() => {
    axios.get('http://localhost:3005/Cart')
-    .then(cart => Setcart(cart.data.cart))
+    .then(cart => setCart(cart.data.cart))
     .catch(e => console.log(e))
   },[])
 
-  console.log(cartt);
 
-
-
+  console.log(cart);
 
   return (
-      
     <div>
       {
-        cartt && cartt.slice(0,20).map((prod => (
-          <SingleProduct prod = {prod} key = {prod._id} />
-        )))
+        cart && cart.map((e) => {
+          <SingleProduct prod={e} key = {e._id} />
+        })
       }
     </div>
     

@@ -1,19 +1,20 @@
 import React, { useContext, useEffect, useState } from 'react'
 import SingleProduct from './SingleProduct'
-import '../../pages/Context'
+import {Cart} from '../../pages/Context'
 
-const Cart = () => {
-  const [total, setTotal] = useState()
+const Carts = () => {
+    const [total, setTotal] = useState()
 
-  const {cart} = useContext(Cart)
-
-  useEffect(() => {
-    setTotal(cart.reduce((acc,curr) => acc + Number(curr.price), 0))
-  }, [cart])
+    const {cart} = useContext(Cart)
+  
+    useEffect(() => {
+      setTotal(cart.reduce((acc,curr) => acc + Number(curr.price), 0))
+    }, [cart])
 
 
   return (
     <div>
+        <div>
       <span style={{ fontSize:30 }}>My Cart</span>
       <br />
       <span style={{ fontSize:30 }}>Total: USD.{total}</span>
@@ -21,7 +22,8 @@ const Cart = () => {
         <SingleProduct prod={prod} key={prod.id}/>
       ))}</div>
     </div>
+    </div>
   )
 }
 
-export default Cart
+export default Carts
