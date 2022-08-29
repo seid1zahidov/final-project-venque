@@ -15,6 +15,8 @@ const Home = () => {
 
 
 
+
+
   return (
     <div>
       {cart && cart.map((prod => (

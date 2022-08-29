@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Header.css'
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {BsPerson} from 'react-icons/bs';
@@ -6,10 +6,13 @@ import {BsBasketFill} from 'react-icons/bs';
 import {AiOutlineSearch} from 'react-icons/ai';
 import Burger from '../../Modal/Burger';
 import { Link } from 'react-router-dom';
+import { Cart } from '../../pages/Context';
 
 
 const Header = () => {
   const [show , setShow] = useState(false)
+  const {cart} = useContext(Cart)
+
   return (
     <header id='header'>
           <div className='containers '>
@@ -29,6 +32,7 @@ const Header = () => {
                 <BsPerson className='person' />
                 <Link to="/basket">
                   <BsBasketFill className='righticon' />
+                  ({cart.length})
                 </Link>
             </div>
          </div>
