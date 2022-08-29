@@ -7,10 +7,12 @@ import {AiOutlineSearch} from 'react-icons/ai';
 import Burger from '../../Modal/Burger';
 import { Link } from 'react-router-dom';
 import { Cart } from '../../pages/Context';
+import Card from '../../Modal/Card';
 
 
 const Header = () => {
   const [show , setShow] = useState(false)
+  const [carts , CartShow] = useState(false)
   const {cart} = useContext(Cart)
 
   return (
@@ -25,15 +27,13 @@ const Header = () => {
             <div className="col-lg-8 col-4 text-center headercenter">
               <Link to="/" >
                 <img className='text-center' src="https://cdn.shopify.com/s/files/1/1592/8017/files/logo_file_160x.png?v=1540930515" alt="sekil" />
-
               </Link>
             </div>
-            <div className="col-lg-2 col-4 text-end">
+            <div className="col-lg-2 col-4 headerright text-end">
                 <BsPerson className='person' />
-                <Link to="/basket">
-                  <BsBasketFill className='righticon' />
+                <BsBasketFill className='righticon' onClick={() => CartShow((s) => !s)}/>
+                   <Card  show={carts} closeModal ={() => CartShow(false)} />
                   ({cart.length})
-                </Link>
             </div>
          </div>
     </div>

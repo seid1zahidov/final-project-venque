@@ -16,7 +16,7 @@ const About = () => {
   const [about9 , AboutSetimage9] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:3005/image')
+    axios.get('http://localhost:3001/image')
     .then(ab => {
       AboutSetimage1(ab.data.images[6].about1)
       AboutSetimage2(ab.data.images[7].about2)

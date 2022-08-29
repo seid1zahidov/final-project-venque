@@ -1,4 +1,5 @@
 
+
 .modal{
     display: flex;
     align-items: center;
@@ -32,4 +33,58 @@
     font-weight: bold;
     font-size: 13px;
     padding-bottom: 5px;
-  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cartcontend{
+  top: 0;
+  position: absolute;
+  right: 0;
+  height: 600px;
+  width: 20%;
+  transition: 1s;
+  background-color: white;
+  padding: 34px;
+  display: flex;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: -1;
+}
+.cartcontend > button{
+  margin: 12px;
+}
+.cartburgerul li{
+  margin-top: 2rem ;
+  font-weight: bold;
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+.cart{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 20px;
+}
+.cartleft h3{
+  position: absolute;
+  left: 2rem;
+  font-size: 15px;
+  margin-top: -1rem;
+}
+
+
+
+

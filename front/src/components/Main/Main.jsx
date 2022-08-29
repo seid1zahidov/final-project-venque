@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Main.css'
 import axios from 'axios';
-import Context from '../../pages/Context';
 import Home from '../Cart/Home';
 
 const Main = () => {
@@ -14,7 +13,7 @@ const Main = () => {
     const [image6,setimage6] = useState([]); 
 
     useEffect(() => {
-        axios.get('http://localhost:3005/image')
+        axios.get('http://localhost:3001/image')
             .then(res => {
                 Setimage1(res.data.images[0].image)
                 setimage2(res.data.images[1].image1)
