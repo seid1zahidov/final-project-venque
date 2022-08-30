@@ -1,12 +1,13 @@
 import React from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
+import { BsInstagram } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 
 const Burger = ({ show, closeModal }) => {
     if (!show) return null
 
     return (
-        <div>
+        <div className='Burgerss'>
             <div className="overlay" onClick={closeModal}></div>
             <div className="contend">
                 <ul className='burgerul'>
@@ -25,6 +26,10 @@ const Burger = ({ show, closeModal }) => {
                     <li>HELP</li>
                 </ul>
                 <AiOutlineClose className='burgers' onClick={closeModal} />
+
+
+
+                <BsInstagram className='instagram' />
             </div>
         </div>
     )

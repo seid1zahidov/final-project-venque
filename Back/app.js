@@ -15,7 +15,7 @@ app.use('/cart',cart)
 mongoose.connect('mongodb+srv://Seid:sjEfusrjE5g19Xsv@cluster0.89klq35.mongodb.net/venque?retryWrites=true&w=majority')
 .then(() => console.log('Connect Database...!'))
 .then(() => {
-    app.listen(3001)
+    app.listen(3002)
 })
 .catch((err) => console.log(err))
 

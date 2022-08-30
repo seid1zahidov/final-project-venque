@@ -11,7 +11,7 @@
     z-index: 1;
 }
 .righticon{
-    z-index: 1;
+    z-index: -1;
     font-size: 20px;
     color: black;
 }
@@ -25,4 +25,5 @@
     color: black;
     font-size: 25px;
     margin-left: 10px;
+    position: absolute;
 }

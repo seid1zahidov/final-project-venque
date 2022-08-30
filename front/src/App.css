@@ -16,10 +16,10 @@
     top: 0;
     position: absolute;
     left: 0;
-    height: 600px;
+    height: 796px;
     width: 30%;
     transition: 1s;
-    background-color: black;
+    background-color: white;
     padding: 34px;
     display: flex;
     border-radius: 8px;
@@ -31,9 +31,29 @@
   .burgerul li{
     margin-top: 2rem ;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 16px;
     padding-bottom: 5px;
 }
+.burgers{
+  position: absolute;
+  left: 3rem;
+  top: 1rem;
+  font-size: 30px;
+}
+.instagram{
+  position: absolute;
+  bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -77,6 +97,7 @@
   right: 1rem;
   top: 1rem;
   font-size: 20px;
+  cursor: pointer;
 }
 .cartleft h3{
   position: absolute;

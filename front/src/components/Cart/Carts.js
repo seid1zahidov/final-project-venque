@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import SingleProduct from './SingleProduct'
-import {Cart} from '../../pages/Context'
+import {Cart} from './Context'
 
 const Carts = () => {
     const [total, setTotal] = useState()

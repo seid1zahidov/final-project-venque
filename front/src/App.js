@@ -5,7 +5,7 @@ import Main from './components/Main/Main';
 import {Route, Routes, BrowserRouter} from 'react-router-dom'
 import About from './pages/About';
 import Technology from './pages/Technology';
-import Carts from '../../front/src/components/Cart/Carts'
+import Admin from './Admin/Slider/Admin';
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
           <Route path='/' element={<Main/>}/>
           <Route path='/About' element={<About/>}/>
           <Route path='/Technology' element={<Technology/>}/>
+          <Route path='/admin' element = {<Admin />} />
         </Routes>
       <Footer />
     </BrowserRouter>

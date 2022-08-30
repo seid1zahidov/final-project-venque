@@ -5,7 +5,7 @@ import SingleProduct from './SingleProduct'
 const Home = () => {
   const [cart  , setCart] = useState([])
   useEffect(() => {
-   axios.get('http://localhost:3005/Cart')
+   axios.get('http://localhost:3002/Cart')
     .then(cart => setCart(cart.data.cart))
     .catch(e => console.log(e))
   },[])

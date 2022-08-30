@@ -6,7 +6,7 @@ import {BsBasketFill} from 'react-icons/bs';
 import {AiOutlineSearch} from 'react-icons/ai';
 import Burger from '../../Modal/Burger';
 import { Link } from 'react-router-dom';
-import { Cart } from '../../pages/Context';
+import { Cart } from '../Cart/Context';
 import Card from '../../Modal/Card';
 
 
