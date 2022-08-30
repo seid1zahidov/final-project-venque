@@ -13,7 +13,7 @@ const SingleProduct = ({ prod }) => {
 
   return (
       <div className='products'>
-        <img src={prod.images} alt={prod.name} />
+        <img src={prod.image} alt={prod.name} />
         <div className="productsDesc">
           <h1 style={{ fontWeight: 700 }}>{prod.name}</h1>
           <p style={{ fontWeight: 700 }}>{prod.price}</p>

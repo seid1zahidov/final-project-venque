@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <header id='header'>
           <div className='containers '>
-         <div className="row align-items-center">
+         <div className="row headerss align-items-center">
             <div className="col-lg-2 col-4 text-start">
             <GiHamburgerMenu className='menu' onClick={() => setShow((s) => !s)}/>
                    <Burger  show={show} closeModal ={() => setShow(false)} />

@@ -18,15 +18,12 @@ const getAllcart = async (req,res,next) => {
 
 // addBook
 const addCart = async (req,res,next) => {
-    const {name,author,description,price,available,image} = req.body;
+    const {name,price,image} = req.body;
     let cart;
     try {
-        cart = new cart({
+        cart = new Cart({
             name,
-            author,
-            description,
             price,
-            available,
             image
         })
         await cart.save();

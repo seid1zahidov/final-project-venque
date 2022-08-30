@@ -1,47 +1,54 @@
 import React from 'react'
-import {Box} from '@mui/system';
-import {Button  , FormLabel , TextField , FormControlLabel, Checkbox} from '@mui/material';
-import {useNavigate} from 'react-router-dom';    
-import { useState } from 'react';
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+
 const Addslider = () => {
 
     const history = useNavigate()
+    
+    const [inputs,setInputs] = useState({
+        name: '',
+        price:'',
+        image:''
+    }) 
 
-    const [inputs , Setinputs] = useState({
-        name : '',
-        price: '',
-        images : '' 
-    })
+    const sendRequest = async () => {
+        await axios.post('http://localhost:3002/cart', {
+            name : String(inputs.name),
+            price : Number(inputs.price),
+            image : String(inputs.image)
+        }).then(res => res.data)
+    }
 
-    const [checked , setChecked] = useState(false)
+    const handleChange = (e) => {
+        setInputs((prevState) => ({
+            ...prevState,
+            [e.target.name] : e.target.value
+        }))
+    }
 
-    const handleSubmit =() => {
-        console.log("salam");
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        sendRequest().then(() => history('/Admin'));
     }
 
   return (
-    <div>
-        <form onSubmit={handleSubmit} action="">
-            <Box
-                display='flex'
-                flexDirection='column'
-                justifyContent='center'
-                maxWidth={500}
-                marginX = 'auto'
-                marginTop={10}
-            >
-
-            <FormLabel>name</FormLabel>
-            <TextField value={inputs.name}  name = 'name'/>
-            <FormLabel>price</FormLabel>
-            <TextField value={inputs.price} name = 'price'/>
-            <FormLabel>images</FormLabel>
-            <TextField value={inputs.images} name = 'images' />
-            <FormControlLabel control={<Checkbox checked = {checked} />} />
-
-            <Button color='red' variant='contained' type='submit' >Add image</Button>
-            </Box>
-        </form>
+    <div className='row justify-content-center'>
+        <div className='col-lg-2'>
+        </div>
+    <div className="col-lg-4 addslider container mt-5">
+    <form onSubmit={handleSubmit}>
+        <h1 className="heading">Add Slider</h1>
+        <p>Title</p>
+        <input value={inputs.name} onChange={handleChange} name='name' type='text'/>
+        <p>Description</p>
+        <input value={inputs.price} onChange={handleChange} name='price' type='text'/>
+        <p>Image</p>
+        <input type="text" value={inputs.image} onChange={handleChange} name='image' />
+        <input type="submit" value="Add Slider"/>
+    </form>
+    </div>
     </div>
   )
 }
