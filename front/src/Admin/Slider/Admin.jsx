@@ -4,7 +4,7 @@ import Addslider from './Addslider'
 const Admin = () => {
   return (
     <div>
-        <Addslider />
+      <Addslider />
     </div>
   )
 }
