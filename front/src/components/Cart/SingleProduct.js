@@ -15,8 +15,8 @@ const SingleProduct = ({ prod }) => {
       <div className='products'>
         <img src={prod.image} alt={prod.name} />
         <div className="productsDesc">
-          <h1 style={{ fontWeight: 700 }}>{prod.name}</h1>
-          <p style={{ fontWeight: 700 }}>{prod.price}</p>
+          <span>{prod.name}</span> 
+          <p>${prod.price}.00</p>
         </div>
         {cart.includes(prod) ? (
           <button className='add' onClick={() => { setCart(cart.filter(c => c._id !== prod._id)) }}>Remove to Carts</button>

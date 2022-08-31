@@ -10,8 +10,8 @@ const Home = () => {
     .catch(e => console.log(e))
   },[])
   return (
-    <div>
-      {cart && cart.map((prod => (
+    <div   className='cartflex '>
+      {cart && cart.slice(0,4).map((prod => (
         <SingleProduct  prod={prod} key={prod._id} />
       )))}
     </div>

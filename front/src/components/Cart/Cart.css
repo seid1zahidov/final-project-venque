@@ -13,3 +13,17 @@
 .products{
     display: flex !important;
 }
+.products{
+    border: none;
+}
+.productsDesc span{
+    margin-top: 1rem;
+    font-size: 13px;
+    font-weight: 600;
+}
+.productsDesc{
+    flex-direction: column;
+}
+.productsDesc{
+    font-size: 12px;
+}
