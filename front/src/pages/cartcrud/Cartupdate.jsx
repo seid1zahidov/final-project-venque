@@ -6,7 +6,8 @@ const Cartupdate = () => {
 
     const [inputs, setInputs] = useState({})
     let {id} = useParams();
-    useEffect(() => {   
+    useEffect((e) => {   
+        e.preventDefault()
         const fetchHandler = async () => {
             await Axios.get(`http://localhost:3002/cart/${id}`)
                 .then(res => res.data)
@@ -14,15 +15,16 @@ const Cartupdate = () => {
                 .catch(e => console.log(e))
         }
         fetchHandler();
-    }, [])
+    }, [id])
     const handleSubmit = (e) => {
         e.preventDefault();
         sendRequest();
         sendRequest().then(() => history('/Admin'));
     }
 
-    const sendRequest = async () => {
-        await Axios.put(`http://localhost:3002/cart`, {
+    const sendRequest = async (e) => {
+        e.preventDefault();
+        await Axios.put(`http://localhost:3002/cart/${id}`, {
             name: String(inputs.name),
             price: Number(inputs.price),
             image: String(inputs.image)
@@ -30,11 +32,14 @@ const Cartupdate = () => {
     }
 
     const handleChange = (e) => {
+        e.preventDefault()
         setInputs((prevState) => ({
             ...prevState,
             [e.target.name]: e.target.value
         }))
     }
+    
+    
 
     return (
         <div>
@@ -43,9 +48,9 @@ const Cartupdate = () => {
                 <form onSubmit={handleSubmit}>
                     <h1 className="heading">Update Slider</h1>
                     <p>Title</p>
-                    <input value={inputs.name} onChange={handleChange} name='title' type='text' />
+                    <input value={inputs.name} onChange={handleChange} name='name' type='text' />
                     <p>Description</p>
-                    <input value={inputs.price} onChange={handleChange} name='description' type='text' />
+                    <input value= {inputs.price} onChange={handleChange} name='price' type='text' />
                     <p>Image</p>
                     <input type="text" value={inputs.image} onChange={handleChange} name='image' />
                     <input type="submit" value="Add Slider" />

@@ -22,7 +22,6 @@ const Cartdetails = () => {
             .then(s => Setdetails(s.data.cart))
             .catch(e => console.log(e))
     }, [])
-    // console.log(details[0].image);
 
     return (
         <div className='cartdetails'>
