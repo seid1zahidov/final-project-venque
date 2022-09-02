@@ -1,13 +1,10 @@
 import React from 'react'
-import Sidebar from '../sidebar/Sidebar'
-import Addslider from './Addslider'
+import Home from '../../components/Cart/Home'
 
 const Admin = () => {
   return (
     <div>
-      <Sidebar />
-      <Addslider />
-      
+      <Home />
     </div>
   )
 }

@@ -1,0 +1,11 @@
+.cartdetails{
+    display: flex;
+    width: 80%;
+    margin-left: 20%;
+}
+.right img{
+    width: 100%;
+}
+.cartdetails img{
+    width: 15%;
+}

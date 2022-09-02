@@ -1,6 +1,5 @@
 import React from 'react'
-import './FeaturedInfo.css'
-
+import './featurenInfo.css'
 
 const FeaturedInfo = () => {
   return (

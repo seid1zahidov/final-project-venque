@@ -34,7 +34,7 @@ const Addslider = () => {
     }
 
     return (
-        <div className='row justify-content-center'>
+        <div className='Addsliderrow justify-content-center'>
             <div className='col-lg-2'>
             </div>
             <div className="col-lg-4 addslider container mt-5">

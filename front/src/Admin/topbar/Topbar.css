@@ -1,0 +1,52 @@
+.topbarComponent {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .topbarComponent .wrapper {
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .topbarComponent .wrapper .left span {
+    font-weight: bold;
+    font-size: 30px;
+    color: darkblue;
+    cursor: pointer;
+  }
+  .topbarComponent .wrapper .right {
+    display: flex;
+    align-items: center;
+  }
+  .topbarComponent .wrapper .right .icon {
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #686868;
+  }
+  .topbarComponent .wrapper .right .icon span {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -5px;
+    right: -3px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+  }
+  .topbarComponent .wrapper .right img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  

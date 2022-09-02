@@ -1,0 +1,142 @@
+.userPage {
+    flex: 4;
+    padding: 20px;
+  }
+  .userPage .titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .userPage .titleContainer button {
+    width: 80px;
+    border: none;
+    padding: 5px;
+    background-color: teal;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+  }
+  .userPage .userContainer {
+    display: flex;
+    margin-top: 20px;
+  }
+  .userPage .userContainer .show {
+    flex: 1;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  }
+  .userPage .userContainer .show .top {
+    display: flex;
+    align-items: center;
+  }
+  .userPage .userContainer .show .top img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .userPage .userContainer .show .top .title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .userPage .userContainer .show .top .title span.username {
+    font-weight: 600;
+  }
+  .userPage .userContainer .show .top .title span.userTitle {
+    font-weight: 300;
+  }
+  .userPage .userContainer .show .bottom {
+    margin-top: 20px;
+  }
+  .userPage .userContainer .show .bottom span.title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #b1b1b1;
+  }
+  .userPage .userContainer .show .bottom .info {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    color: #444;
+  }
+  .userPage .userContainer .show .bottom .info .icon {
+    font-size: 20px;
+  }
+  .userPage .userContainer .show .bottom .info .infoTitle {
+    margin-left: 10px;
+  }
+  .userPage .userContainer .update {
+    flex: 2;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    margin-left: 20px;
+  }
+  .userPage .userContainer .update span.title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .userPage .userContainer .update form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .userPage .userContainer .update form .left .updateItem {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .userPage .userContainer .update form .left .updateItem label {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .userPage .userContainer .update form .left .updateItem input[type='text'] {
+    border: none;
+    width: 250px;
+    height: 30px;
+    border-bottom: 1px solid gray;
+  }
+  .userPage .userContainer .update form .left .updateItem input[type='text']:focus {
+    outline: 0;
+  }
+  .userPage .userContainer .update form .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .userPage .userContainer .update form .right .upload label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .userPage .userContainer .update form .right .upload label img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .userPage .userContainer .update form .right .upload label .publish {
+    color: #0095c2;
+    font-size: 40px;
+    cursor: pointer;
+    margin: 5px 10px 0 0;
+    transition: 0.15s ease-in;
+  }
+  .userPage .userContainer .update form .right .upload label .publish:hover {
+    color: #007497;
+  }
+  .userPage .userContainer .update form .right button {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #03a87f;
+    color: white;
+    font-weight: 600;
+  }
+  

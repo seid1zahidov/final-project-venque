@@ -1,9 +1,6 @@
 import React from 'react'
-import './Sidebar.css'
-
-
-  import { Link } from 'react-router-dom'
-import FeaturedInfo from '../featuredInfo/FeaturedInfo'
+import { Link } from 'react-router-dom'
+import './sidebar.css'
 
 const Sidebar = () => {
   return (
@@ -12,16 +9,20 @@ const Sidebar = () => {
       <div className="menu">
         <h3>Dashboard</h3>
         <ul>
-          <Link to='/Admin' className='link'>
+          <Link to='/' className='link'>
             <li>
               Home
             </li>
           </Link>
           <li>
-            Analytics
+            <Link to="/cart">
+              Cart
+            </Link>
           </li>
           <li>
-            Sales
+            <Link to='/cartdetails'>
+              Cartdetails
+            </Link>
           </li>
         </ul>
       </div>
