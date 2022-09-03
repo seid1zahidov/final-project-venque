@@ -1,69 +1,53 @@
+import axios from 'axios';
 import React from 'react'
-import { useEffect } from 'react'
-import { useState } from 'react'
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'
 import './cartdetail.css'
-import axios from 'axios'
-import Button from 'react-bootstrap/Button';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
+import { useState } from 'react';
 
 const Cartdetails = () => {
 
-    const [details, Setdetails] = useState([])
+    const history = useNavigate();
+
+    const [slider, Setslider] = useState([])
+
+    const slider_arr = slider && slider.map(item => {
+        return item._id
+    })
+
 
     useEffect(() => {
         axios.get('http://localhost:3002/cart')
-            .then(s => Setdetails(s.data.cart))
-            .catch(e => console.log(e))
+            .then(res => Setslider(res.data.cart))
+            .catch(error => console.log(error))
     }, [])
+
 
     return (
         <div className='cartdetails'>
-            <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                    <TableHead>
-                        <TableRow>
-                            <TableCell>Imgae</TableCell>
-                            <TableCell align="right">Name</TableCell>
-                            <TableCell align="right">Price</TableCell>
-                            <TableCell align="right">Update</TableCell>
-                            <TableCell align="right">Delete</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {details.map((row) => (
-                            <TableRow
-                                key={row.name}
-                                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                            >
-                                <TableCell component="th" scope="row">
-                                    <img src={row.image} alt="" />
-                                </TableCell>
-                                <TableCell align="right">{row.name}</TableCell>
-                                <TableCell align="right">{row.price}</TableCell>
-                                <TableCell align="right">
-                                    <Link to={`/cartupdate/${row._id}`}>
-                                        <Button variant="secondary" size="md" active>
-                                            Update
-                                        </Button>
-                                    </Link>
-                                </TableCell>
-                                <TableCell align="right">
-                                    <Button variant="secondary" size="md" active>
-                                        Delete
-                                    </Button>
-                                </TableCell>
-                            </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-            </TableContainer>
+            <div className="col-lg-3">
+            </div>
+            <div className="col-lg-9">
+                {slider && slider.map((sliderss, __id) => (
+                    <tbody>
+                        <tr key={sliderss._id}>
+                            <td className='w-25'>
+                                <td>{sliderss.name}</td>
+
+                            </td>
+                            <td>{sliderss.price}</td>
+                            <img src={sliderss.image} className="img-fluid img-thumbnail" alt={sliderss.name} />
+
+                            <NavLink to={`/cartupdate/${slider_arr[__id]}`} onClick={async() => {
+                                await axios.put(`http://localhost:3002/cart/${slider_arr[__id]}`)
+                                    .then(res => res.data.cart)
+                            }} className="me-1 btn btn1 btndel">Update</NavLink>
+                        </tr>
+                    </tbody>
+                ))
+                }
+            </div>
         </div>
     )
 }

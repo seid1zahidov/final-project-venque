@@ -39,7 +39,6 @@ const addCart = async (req,res,next) => {
 }
 
 
-// getById
 const getById = async (req,res,next) => {
     const id = req.params.id;
     let cart;
@@ -49,39 +48,34 @@ const getById = async (req,res,next) => {
         console.log(error);
     }
     if(!cart) {
-        return res.status(404).json({message: 'No books yet...!'})
+        return res.status(404).json({message: 'No cart  id!'})
     }
     else{
         return res.status(200).json({cart})
     }
 }
-// updateBook
 const updateCart = async (req,res,next) => {
     const id = req.params.id;
-    const {name,author,description,price,available,image} = req.body;
+    const {name,price,image} = req.body;
     let cart;
     try {
         cart = await Cart.findByIdAndUpdate(id, {
             name,
-            author,
-            description,
             price,
-            available,
-            image
+            image,
         })
-        cart = await book.save();
+        cart = await cart.save();
     } 
     catch (error) {
         console.log(err);
     }
     if(!cart) {
-        return res.status(404).json({message: 'Unable to Updated by this id...!'})
+        return res.status(404).json({message: 'Cart no update!'})
     }
     else{
       return res.status(200).json({cart})
   }
 }
-// deleteBook
 const deleteCart = async (req,res,next) => {
   const id = req.params.id;
   let cart;
