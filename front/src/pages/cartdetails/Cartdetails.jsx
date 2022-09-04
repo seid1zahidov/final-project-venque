@@ -61,7 +61,12 @@ const Cartdetails = () => {
                                                 .then(res => res.data.cart)
                                         }} className=" btn btn-warning" >Update</NavLink>
                                     </TableCell>
-                                    <TableCell align="right">{row.protein}</TableCell>
+                                    <TableCell align="right">
+                                    <NavLink to={`/Admin/${slider_arr[__id]}`} onClick={async() => {
+                                            await axios.delete(`http://localhost:3002/cart/${slider_arr[__id]}`)
+                                                .then(res => history('/cartdetails'))
+                                        }} className=" btn btn-danger" >Delete</NavLink>
+                                    </TableCell>
                                 </TableRow>
                         ))}
                     </TableBody>
