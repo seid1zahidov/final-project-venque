@@ -18,15 +18,15 @@ const Cartupdate = () => {
             await axios.get(`http://localhost:3002/cart/${id}`)
                 .then(res => res.data)
                 .then(data => Setinputs(data.cart))
+                .catch(err => console.log(err))
         }
         fetcHandler()
     }, [id])
 
 
     const handleSubmit = (e) => {
-        e.preventDefaultI();
         sendRequest();
-        sendRequest().then(() => history('/Admin'));
+        sendRequest().then(() => history('/cartdetails'));
     }
 
     const sendRequest = async () => {
@@ -34,7 +34,7 @@ const Cartupdate = () => {
             name: String(inputs.name),
             price: Number(inputs.price),
             image: String(inputs.image)
-        }).then(res => console.log(res.data))
+        }).then(res => res.data.cart)
     }
 
 
@@ -44,12 +44,6 @@ const Cartupdate = () => {
             [e.target.name]: e.target.value
         }))
     }
-
-
-
-
-
-
 
     return (
 

@@ -5,6 +5,13 @@ import { useNavigate } from 'react-router-dom'
 import './cartdetail.css'
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
 
 const Cartdetails = () => {
 
@@ -23,31 +30,43 @@ const Cartdetails = () => {
             .catch(error => console.log(error))
     }, [])
 
-
+    console.log(slider);
     return (
-        <div className='cartdetails'>
-            <div className="col-lg-3">
-            </div>
-            <div className="col-lg-9">
-                {slider && slider.map((sliderss, __id) => (
-                    <tbody>
-                        <tr key={sliderss._id}>
-                            <td className='w-25'>
-                                <td>{sliderss.name}</td>
-
-                            </td>
-                            <td>{sliderss.price}</td>
-                            <img src={sliderss.image} className="img-fluid img-thumbnail" alt={sliderss.name} />
-
-                            <NavLink to={`/cartupdate/${slider_arr[__id]}`} onClick={async() => {
-                                await axios.put(`http://localhost:3002/cart/${slider_arr[__id]}`)
-                                    .then(res => res.data.cart)
-                            }} className="me-1 btn btn1 btndel">Update</NavLink>
-                        </tr>
-                    </tbody>
-                ))
-                }
-            </div>
+        <div className="col-lg-10 cartdetail">
+            <TableContainer component={Paper}>
+                <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                    <TableHead>
+                        <TableRow>
+                            <TableCell>Image</TableCell>
+                            <TableCell align="right">Name</TableCell>
+                            <TableCell align="right">Price</TableCell>
+                            <TableCell align="right">Update</TableCell>
+                            <TableCell align="right">Delete</TableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        {slider.map((row, __id) => (
+                                <TableRow
+                                    key={row._id}
+                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                >
+                                    <TableCell component="th" scope="row">
+                                        <img className='cartdetailimg' src={row.image} alt={row.name} />
+                                    </TableCell>
+                                    <TableCell align="right">{row.name}</TableCell>
+                                    <TableCell align="right">{row.price}</TableCell>
+                                    <TableCell align="right">
+                                        <NavLink to={`/cartupdate/${slider_arr[__id]}`} onClick={async() => {
+                                            await axios.put(`http://localhost:3002/cart/${slider_arr[__id]}`)
+                                                .then(res => res.data.cart)
+                                        }} className=" btn btn-warning" >Update</NavLink>
+                                    </TableCell>
+                                    <TableCell align="right">{row.protein}</TableCell>
+                                </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </TableContainer>
         </div>
     )
 }

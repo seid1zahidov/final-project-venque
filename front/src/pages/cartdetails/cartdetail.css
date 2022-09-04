@@ -6,6 +6,9 @@
 .right img{
     width: 100%;
 }
-.cartdetails img{
+.cartdetail{
+    margin-left: 15rem;
+}
+.cartdetail img{
     width: 15%;
 }
