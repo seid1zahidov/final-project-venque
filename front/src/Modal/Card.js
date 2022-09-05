@@ -4,11 +4,11 @@ import Carts from '../components/Cart/Carts'
 
 const Card = ({ show, closeModal }) => {
 
-  if (!show) return null
+    if (!show) return null
 
-  return (
-    <div>
-        <div className="overlay" onClick={closeModal}></div>
+    return (
+        <div>
+            <div className="overlay" onClick={closeModal}></div>
             <div className="cartcontend">
                 <div className="col-lg-6 cartleft">
                     <h3>Cart</h3>
@@ -18,9 +18,9 @@ const Card = ({ show, closeModal }) => {
                 </div>
             </div>
             <Carts />
-                <hr />
-    </div>
-  )
+            <hr />
+        </div>
+    )
 }
 
 export default Card

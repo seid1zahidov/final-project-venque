@@ -70,8 +70,8 @@
 
 
 .cartcontend{
-  top: 0;
-  position: absolute;
+  top: 10px;
+  position: fixed;
   right: 0;
   height: 600px;
   width: 20%;
@@ -82,6 +82,8 @@
   border-radius: 8px;
   cursor: pointer;
   z-index: -1;
+}
+.headerright{
 }
 .cartcontend > button{
   margin: 12px;

@@ -26,10 +26,13 @@
   /* ----------------------- */
   
   .productContainer {
+    z-index: 2;
     display: flex;
     padding: 20px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+  }
+  .productContainer img{
+    width: 5%;
   }
   
   .products {
@@ -39,6 +42,7 @@
     display: flex;
     flex-direction: column;
     border: 1px solid black;
+    z-index: 9;
   }
   
   .productDesc {
@@ -64,4 +68,12 @@
 }
 .cartflex img{
   width: 100%;
+}
+.products{
+  border: none;
+  margin-top: 2rem;
+  width: 120%;
+}
+.products img{
+  align-items: center;
 }
