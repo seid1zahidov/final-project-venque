@@ -1,0 +1,30 @@
+.Modalcart img{
+        width: 100%;
+}
+.Modalcart {
+    margin-left: -76px;
+    margin-top: 53px;
+    width: 100%;
+    display: flex;
+}
+.adds{
+    position: absolute;
+    top: 78px;
+    right: 19px;
+
+}
+.Modalcart span{
+font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+    left: 22%;
+}
+.Modalcart p{
+    position: absolute;
+    left: 88px;
+    top: 107px;
+    font-weight: bold;
+}
+.modalcarttmain img{
+    width: 100%;
+}

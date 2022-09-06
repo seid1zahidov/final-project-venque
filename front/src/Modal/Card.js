@@ -16,9 +16,20 @@ const Card = ({ show, closeModal }) => {
                 <div className="col-lg-6">
                     <AiOutlineClose className='cart' onClick={closeModal} />
                 </div>
+
             </div>
+            <div>
+                <hr className='carthr' />
+                <form className='cartfrom' action="">
+                    <input type="radio"/>
+                    <label>Congratulations! Your order qualifies for free shipping</label>
+
+                </form>
+                <hr className='carthrr' />
+
+            </div>
+            
             <Carts />
-            <hr />
         </div>
     )
 }

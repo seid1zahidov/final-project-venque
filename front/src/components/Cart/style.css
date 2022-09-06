@@ -70,10 +70,13 @@
   width: 100%;
 }
 .products{
+  display: flex;
   border: none;
   margin-top: 2rem;
   width: 120%;
 }
 .products img{
+  display: flex;
+  width: 100%;
   align-items: center;
 }

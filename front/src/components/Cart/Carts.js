@@ -4,6 +4,7 @@ import './Cart.css'
 import SingleProduct from './SingleProduct'
 import Card from '../../Modal/Card'
 import Home from './Home'
+import Modalcard from './Modalcard'
 
 const Carts = () => {
   const [total, setTotal] = useState()
@@ -20,15 +21,16 @@ const Carts = () => {
       <div>
 
         <div className='productContainer'>{cart.map(prod => (
-          <SingleProduct prod={prod} key={prod.id} />
+          <Modalcard prod={prod} key={prod.id} />
         ))}</div>
 
-        <div className="cardmodalbottom">
+        
+      </div>
+      <div className="cardmodalbottom">
           <span>My Cart</span>
           <br />
           <span>Total: USD.{total} $</span>
         </div>
-      </div>
     </div>
   )
 }
