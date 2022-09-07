@@ -29,7 +29,7 @@ const Cartupdate = () => {
         sendRequest().then(() => history('/cartdetails'));
     }
 
-    const sendRequest = async () => {
+    const sendRequest = async () => {   
         await axios.put(`http://localhost:3002/cart/${id}`, {
             name: String(inputs.name),
             price: Number(inputs.price),

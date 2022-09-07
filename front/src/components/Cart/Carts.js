@@ -4,6 +4,7 @@ import './Cart.css'
 import SingleProduct from './SingleProduct'
 import Card from '../../Modal/Card'
 import Home from './Home'
+import { AiOutlineClose } from 'react-icons/ai'
 import Modalcard from './Modalcard'
 
 const Carts = () => {
@@ -17,20 +18,13 @@ const Carts = () => {
 
 
   return (
-    <div className='seidd'>
-      <div>
-
+    <div className='cartList'>
+      <div className='col-lg-12'>
         <div className='productContainer'>{cart.map(prod => (
           <Modalcard prod={prod} key={prod.id} />
         ))}</div>
-
-        
       </div>
-      <div className="cardmodalbottom">
-          <span>My Cart</span>
-          <br />
-          <span>Total: USD.{total} $</span>
-        </div>
+      
     </div>
   )
 }

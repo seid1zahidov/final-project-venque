@@ -1,23 +1,40 @@
+.card{
+  width: 22%;
+  height: 100%;
+  position: relative;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.card__footer{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.card__headear_left{
+  display: flex;
+}
+.card__headear_left h3{
+  font-size: 13px;
+  font-weight: 700;
+}
+.card__header_right_icon{
+  position: absolute;
+  right: 10px;
+  font-size: 23px;
+  font-weight: bold;
+}
 
 
-.modal{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: inherit;
-    width: 10%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  .contend{
+
+
+.contend{
     top: 0;
     position: absolute;
     left: 0;
     height: 796px;
-    width: 30%;
+    width: 100%;
     transition: 1s;
     background-color: white;
     padding: 34px;
@@ -75,18 +92,11 @@
   right: 0;
   height: 100%;
   width: 22%;
-  transition: 1s;
   background-color: white;
   padding: 34px;
   display: flex;
   border-radius: 8px;
   cursor: pointer;
-  z-index: -1;
-}
-.headerright{
-}
-.cartcontend > button{
-  margin: 12px;
 }
 .cartfrom{
   

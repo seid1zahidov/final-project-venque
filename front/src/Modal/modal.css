@@ -1,0 +1,10 @@
+.card__header{
+    display: flex;
+    align-items: center;
+}
+.card__headear_left{
+
+}
+.modal_card_main{
+    display: flex;
+}

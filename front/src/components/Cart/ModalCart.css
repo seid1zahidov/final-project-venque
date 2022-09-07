@@ -1,30 +1,20 @@
-.Modalcart img{
-        width: 100%;
-}
-.Modalcart {
-    margin-left: -76px;
-    margin-top: 53px;
-    width: 100%;
-    display: flex;
-}
-.adds{
+
+
+/* .span_x {
     position: absolute;
-    top: 78px;
-    right: 19px;
+    top: 0;
+    right: 0;
+}
+.span_parent{
+position: relative;
+} */
+.modal__card__wrapper{
+    border: solid;
+}
+
+.rowss{
 
 }
-.Modalcart span{
-font-weight: bold;
-    font-size: 12px;
-    position: absolute;
-    left: 22%;
-}
-.Modalcart p{
-    position: absolute;
-    left: 88px;
-    top: 107px;
-    font-weight: bold;
-}
-.modalcarttmain img{
+.rowss img{
     width: 100%;
 }
