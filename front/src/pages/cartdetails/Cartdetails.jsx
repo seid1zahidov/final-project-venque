@@ -12,6 +12,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import Sidebar from '../../Admin/sidebar/Sidebar';
 
 const Cartdetails = () => {
 
@@ -32,7 +33,12 @@ const Cartdetails = () => {
 
     console.log(slider);
     return (
-        <div className="col-lg-10 cartdetail">
+
+       <div className="cartddetails">
+        <div className="col-lg-2">
+        <Sidebar />
+        </div>
+         <div className="col-lg-10 cartdetail">
             <TableContainer component={Paper}>
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
@@ -73,6 +79,8 @@ const Cartdetails = () => {
                 </Table>
             </TableContainer>
         </div>
+       </div>
+
     )
 }
 

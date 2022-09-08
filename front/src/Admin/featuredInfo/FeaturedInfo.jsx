@@ -1,9 +1,14 @@
 import React from 'react'
+import Sidebar from '../sidebar/Sidebar'
 import './featurenInfo.css'
 
 const FeaturedInfo = () => {
   return (
-    <div className='featuredInfoComponent'>
+    <div className="FeaturedInfo">
+      <div className="col-lg-2">
+      </div>
+      <div className="col-lg-10">
+      <div className='featuredInfoComponent'>
     <div className='item'>
       <span className='title'>Revanue</span>
       <div>
@@ -37,6 +42,8 @@ const FeaturedInfo = () => {
       <span className='sub'>Compared to last month</span>
     </div>
   </div>
+      </div>
+    </div>
   )
 }
 

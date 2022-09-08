@@ -27,10 +27,21 @@ const Card = ({ show, closeModal }) => {
                 </div>
             </div>
             <div className="card__body">
+                <hr />
+                <div className="card_body_text">
+                    <input type="radio" />
+                    <h6>Congratulations! Your order qualifies for free shipping</h6>
+                </div>
+                <hr />
                 <Carts />
             </div>
             <div className="card__footer">
-                <h1>{total}</h1>
+                <div className="card_footer_flex">
+                    <h5>SUBTOTAL</h5>
+                    <p>Shipping, taxes, and discount codes are calculat</p>
+                    <span>${total}.00</span>
+                </div>
+                <button>Checkout</button>
             </div>
         </div>
     )

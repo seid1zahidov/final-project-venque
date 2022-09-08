@@ -1,12 +1,18 @@
 import React from 'react'
 import Chart from '../../Admin/chart/Chart'
 import FeaturedInfo from '../../Admin/featuredInfo/FeaturedInfo'
+import Sidebar from '../../Admin/sidebar/Sidebar'
 import WidgetLg from '../../Admin/widgetLg/WidgetLg'
 import WidgetSm from '../../Admin/widgetSm/WidgetSm'
 import './home.css'
 
 const Home = () => {
   return (
+   <section id='Home'>
+    <div className="col-lg-3 deneme1">
+      <Sidebar />
+    </div>
+    <div className="col-lg-9 deneme">
     <div className='homePage'>
     <FeaturedInfo />
     <Chart 
@@ -19,6 +25,8 @@ const Home = () => {
       <WidgetLg />
     </div>
   </div>
+    </div>
+   </section>
   )
 }
 

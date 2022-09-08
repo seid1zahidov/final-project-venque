@@ -9,12 +9,25 @@
 position: relative;
 } */
 .modal__card__wrapper{
-    border: solid;
 }
 
-.rowss{
-
-}
 .rowss img{
     width: 100%;
+}
+.modal_card_main_right_text{
+    margin-right: 8rem;
+}
+.modal_card_main_right_text span{
+    font-weight: bold;
+    font-size: 13px;
+}
+.modal_card_main_right_text p{
+    margin-top: 10px;
+    margin-right: 60px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.adds{
+    margin-right: 20px;
+    margin-top: -140px;
 }

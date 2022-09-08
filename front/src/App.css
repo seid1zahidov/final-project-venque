@@ -12,6 +12,31 @@
   bottom: 0;
   right: 0;
 }
+.card_footer_flex{
+  display: flex;
+}
+.card_footer_flex span{
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: -5px;
+  margin-left: 4px;
+}
+.card_footer_flex p{
+  font-size: 9px;
+  margin-top: 20px;
+}
+.card_footer_flex h5{
+  font-size: 12px;
+}
+
+.card__footer button{
+  padding: 11px 133px 11px 133px;
+  margin-right: 11px;
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
 .card__headear_left{
   display: flex;
 }
@@ -26,6 +51,19 @@
   font-weight: bold;
 }
 
+.card__body span{
+  font-size: 10px;
+}
+
+.card_body_text{
+  margin-top: -10px;
+  display: flex;
+  margin-bottom: -10px;
+}
+.card_body_text h6{
+  margin-left: 5px;
+  font-size: 11px;
+}
 
 
 
@@ -34,7 +72,7 @@
     position: absolute;
     left: 0;
     height: 796px;
-    width: 100%;
+    width: 22%;
     transition: 1s;
     background-color: white;
     padding: 34px;

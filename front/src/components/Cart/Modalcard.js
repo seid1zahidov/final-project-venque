@@ -14,21 +14,21 @@ const Modalcard = ({ prod }) => {
     const { cart, setCart } = useContext(Cart)
 
     return (
-        <div className="container">
-            <div className="rowss">
-                <div className="col-12 modal_card_main">
-                    <div className="modal__card__main_left col-lg-6">
-                        <img src={prod.image} alt={prod.name} />
-                    </div>
-                    <div className="modal__card__main_right col-lg-6">
+        <div className="rowss">
+            <div className="col-12 modal_card_main">
+                <div className="modal__card__main_left col-lg-3">
+                    <img src={prod.image} alt={prod.name} />
+                </div>
+                <div className="modal__card__main_right col-lg-9">
+                    <div className="modal_card_main_right_text">
                         <span>{prod.name}</span>
-                        <p>{prod.price}</p>
-                        <AiOutlineClose className='adds' onClick={() => { setCart(cart.filter(c => c._id !== prod._id)) }} />
+                        <p> ${prod.price}.00</p>
                     </div>
+                    <AiOutlineClose className='adds' onClick={() => { setCart(cart.filter(c => c._id !== prod._id)) }} />
                 </div>
             </div>
-
         </div>
+
     )
 }
 

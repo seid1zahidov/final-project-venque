@@ -12,7 +12,9 @@ const Burger = ({ show, closeModal }) => {
             <div className="contend">
                 <ul className='burgerul'>
                     <li>AMOO APPAREL</li>
-                    <li>Shop_All</li>
+                    <Link to='./Shop'>
+                        <li>Shop_All</li>
+                    </Link>
                     <li>COLLECTIONS</li>
                     <li>SUSTAINABILITY</li>
                     <li>SALE</li>

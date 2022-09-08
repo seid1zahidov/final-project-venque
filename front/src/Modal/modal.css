@@ -2,9 +2,12 @@
     display: flex;
     align-items: center;
 }
-.card__headear_left{
-
-}
 .modal_card_main{
     display: flex;
+}
+
+.burgerul li {
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
 }
