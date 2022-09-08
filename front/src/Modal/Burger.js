@@ -28,10 +28,6 @@ const Burger = ({ show, closeModal }) => {
                     <li>HELP</li>
                 </ul>
                 <AiOutlineClose className='burgers' onClick={closeModal} />
-
-
-
-                <BsInstagram className='instagram' />
             </div>
         </div>
     )

@@ -1,0 +1,29 @@
+
+.contend{
+    top: 0;
+    position: absolute;
+    left: 0;
+    height: 106px;
+    width: 22%;
+    transition: 1s;
+    background-color: white;
+    padding: 34px;
+    display: flex;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .contend > button{
+    margin: 12px;
+  }
+  .burgerul li{
+    margin-top: 2rem ;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.burgers{
+  position: absolute;
+  left: 3rem;
+  top: 1rem;
+  font-size: 30px;
+}
