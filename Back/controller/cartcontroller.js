@@ -18,13 +18,14 @@ const getAllcart = async (req,res,next) => {
 
 // addBook
 const addCart = async (req,res,next) => {
-    const {name,price,image} = req.body;
+    const {name,price,image,rate} = req.body;
     let cart;
     try {
         cart = new Cart({
             name,
             price,
-            image
+            image , 
+            rate
         })
         await cart.save();
     } catch (error) {
@@ -56,13 +57,14 @@ const getById = async (req,res,next) => {
 }
 const updateCart = async (req,res,next) => {
     const id = req.params.id;
-    const {name,price,image} = req.body;
+    const {name,price,image,rate} = req.body;
     let cart;
     try {
         cart = await Cart.findByIdAndUpdate(id, {
             name,
             price,
             image,
+            rate
         })
         cart = await cart.save();
     } 
