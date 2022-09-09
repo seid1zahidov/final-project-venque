@@ -6,11 +6,15 @@ import Card from '../../Modal/Card'
 import Home from './Home'
 import { AiOutlineClose } from 'react-icons/ai'
 import Modalcard from './Modalcard'
+import axios from 'axios'
 
 const Carts = () => {
-  const [total, setTotal] = useState()
-
-  const { cart } = useContext(Cart)
+  const [cart, setCart] = useState([])
+  useEffect(() => {
+    axios.get('http://localhost:3002/cart')
+      .then(cart => setCart(cart.data.cart))
+      .catch(e => console.log(e))
+  }, [])
 
 
   return (
@@ -20,7 +24,7 @@ const Carts = () => {
           <Modalcard prod={prod} key={prod.id} />
         ))}</div>
       </div>
-      
+
     </div>
   )
 }

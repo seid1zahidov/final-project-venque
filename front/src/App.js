@@ -10,7 +10,7 @@ import Sidebar from './Admin/sidebar/Sidebar';
 import Addslider from './Admin/Slider/Addslider.jsx'
 import Cartdteails from './pages/cartdetails/Cartdetails.jsx';
 import Cartupdate from './pages/cartcrud/Cartupdate.jsx'
-import Shop from './pages/Shop';
+import Shop from './pages/Shopcard/Shop';
 import Addshopimg from './Admin/shopimg/Addshopimg';
 import Shopimgdetails from './pages/Shopimgdetails/Shopimgdetails'
 import Shopimgupdate from './pages/Shopimgdetails/Shopimgupdate';

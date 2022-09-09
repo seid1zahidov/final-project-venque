@@ -1,15 +1,15 @@
 import axios from 'axios'
 import React, { useContext, useEffect } from 'react'
 import { useState } from 'react'
-import '../assets/page/shop.css'
+import '../../assets/page/shop.css'
 import { BsFilter } from 'react-icons/bs';
 import { BsSortDown } from 'react-icons/bs';
-import Shopfilter from '../Modal/Shopfilter';
+import Shopfilter from '../../Modal/Shopfilter';
 import { AiOutlineClose } from 'react-icons/ai';
-import { Cart } from '../components/Cart/Context';
-import SingleProduct from '../components/Cart/SingleProduct'
+import { Cart } from '../../components/Cart/Context';
+import SingleProduct from '../../components/Cart/SingleProduct'
 
-const Shop = ({prod}) => {
+const Shop = ({ prod }) => {
   const [img, Setimg] = useState()
   const { cart, setCart } = useContext(Cart)
 
@@ -22,15 +22,6 @@ const Shop = ({prod}) => {
     }
     Shopimage()
   }, [])
-
-  useEffect(() => {
-    const Prodcard =() => {
-      axios.get('http://localhost:3002/cart')
-      .then(r => r.data.cart)
-      .catch(e => console.log(e))
-    }
-    Prodcard()
-  })
 
   const [show, setShow] = useState(false)
 
@@ -65,6 +56,9 @@ const Shop = ({prod}) => {
         </div>
       </section>
 
+      <section id='Shop'>
+
+      </section>
 
     </section>
   )
