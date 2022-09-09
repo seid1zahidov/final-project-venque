@@ -6,7 +6,6 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import About from './pages/About';
 import Technology from './pages/Technology';
 import Home from './pages/home/Home';
-import Sidebar from './Admin/sidebar/Sidebar';
 import Addslider from './Admin/Slider/Addslider.jsx'
 import Cartdteails from './pages/cartdetails/Cartdetails.jsx';
 import Cartupdate from './pages/cartcrud/Cartupdate.jsx'

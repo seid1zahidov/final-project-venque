@@ -1,10 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { Cart } from './Context'
+import React, {  useEffect, useState } from 'react'
 import './Cart.css'
-import SingleProduct from './SingleProduct'
-import Card from '../../Modal/Card'
-import Home from './Home'
-import { AiOutlineClose } from 'react-icons/ai'
 import Modalcard from './Modalcard'
 import axios from 'axios'
 

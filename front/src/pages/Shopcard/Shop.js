@@ -8,10 +8,13 @@ import Shopfilter from '../../Modal/Shopfilter';
 import { AiOutlineClose } from 'react-icons/ai';
 import { Cart } from '../../components/Cart/Context';
 import SingleProduct from '../../components/Cart/SingleProduct'
+import ShoopcartImage from './ShoopcartImage';
+import '../../components/Cart/Cart.css'
+import Shopmap from './Shopmap';
+import Shophome from './Shophome';
 
-const Shop = ({ prod }) => {
+const Shop = () => {
   const [img, Setimg] = useState()
-  const { cart, setCart } = useContext(Cart)
 
   useEffect(() => {
     const Shopimage = async () => {
@@ -21,6 +24,14 @@ const Shop = ({ prod }) => {
         .catch(e => console.log(e))
     }
     Shopimage()
+  }, [])
+
+  
+  const [cart, setCart] = useState([])
+  useEffect(() => {
+    axios.get('http://localhost:3002/cart')
+      .then(cart => setCart(cart.data.cart))
+      .catch(e => console.log(e))
   }, [])
 
   const [show, setShow] = useState(false)
@@ -56,10 +67,12 @@ const Shop = ({ prod }) => {
         </div>
       </section>
 
-      <section id='Shop'>
+      <section id='Shopcart'>
+      {cart && cart.map((prod => (
+            <Shophome prod={prod} key={prod._id} />
+        )))}
 
       </section>
-
     </section>
   )
 }

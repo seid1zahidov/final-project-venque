@@ -8,11 +8,10 @@ import "swiper/css/free-mode";
 
 
 const Modalcard = ({ prod }) => {
-
+    
     const [count, setCount] = useState(0);
 
     const { cart, setCart } = useContext(Cart)
-
     return (
         <div className="rowss">
             <div className="col-12 modal_card_main">
