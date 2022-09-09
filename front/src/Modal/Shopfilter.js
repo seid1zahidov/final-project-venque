@@ -4,21 +4,15 @@ import { Link } from 'react-router-dom'
 import './shopfilter.css'
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
+import Filterstart from '../components/Filter/Filterstart';
 
 
 
 
-function valuetext(value) {
-    return `${value}°C`;
-  }
 
 
 const Shopfilter = ({ show, closeModal }) => {
-  const [value, setValue] = React.useState([20, 37]);
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
 
 
     if (!show) return null
@@ -28,7 +22,7 @@ const Shopfilter = ({ show, closeModal }) => {
     <div className='Burgerss'>
     <div className="Shopoverlay" onClick={closeModal}></div>
     <div className="Shopcontend">
-    
+      <Filterstart />
         <AiOutlineClose className='Shopburger' onClick={closeModal} />
     </div>
 </div>
