@@ -1,8 +1,7 @@
 .products{
     display: flex !important;
-}
-.products{
     border: none;
+
 }
 .productsDesc span{
     margin-top: 1rem;

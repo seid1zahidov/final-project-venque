@@ -29,6 +29,8 @@
         margin-top: 3rem;
         display: flex;
         padding: 0 1rem;
+        background-color:whitesmoke;
+        padding: 10px ;
 }
 .shop_modal_right span{
         margin-right: 10px;
@@ -38,3 +40,5 @@
         font-size: 12px;
         margin-left: 3px;
 }
+
+

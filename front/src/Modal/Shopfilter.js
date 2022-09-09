@@ -26,18 +26,10 @@ const Shopfilter = ({ show, closeModal }) => {
 
   return (
     <div className='Burgerss'>
-    <div className="overlay" onClick={closeModal}></div>
-    <div className="contend">
-    <Box sx={{ width: 300 }}>
-      <Slider
-        getAriaLabel={() => 'Temperature range'}
-        value={value}
-        onChange={handleChange}
-        valueLabelDisplay="auto"
-        getAriaValueText={valuetext}
-      />
-        </Box>
-        <AiOutlineClose className='burgers' onClick={closeModal} />
+    <div className="Shopoverlay" onClick={closeModal}></div>
+    <div className="Shopcontend">
+    
+        <AiOutlineClose className='Shopburger' onClick={closeModal} />
     </div>
 </div>
   )
