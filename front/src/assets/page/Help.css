@@ -1,0 +1,31 @@
+#Help_main_top img{
+    width: 100%;
+    margin-top: 8rem;
+}
+#Help_main_top{
+    margin-top: 2rem;
+}
+.help_main_top_img_text{
+    position: absolute;
+    top: 50%;
+    left: 31.5%;
+    text-align: center;
+    color: #fff;
+}
+.help_main_top_img_text h1{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 30px;
+}
+.help_main_top_img_text p{
+    font-size: 13px;
+}
+.help_main_top_img_text button{
+    margin-top: 1rem;
+    padding: 14px 80px 14px 80px;
+    font-size: 11px;
+    background-color: transparent;
+    border: 1px solid white;
+    border: 1px solild white;
+    color: white;
+}

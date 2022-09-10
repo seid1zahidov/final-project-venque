@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
+import '../assets/page/Help.css'
 
 const Help = () => {
 
@@ -17,13 +18,23 @@ const Help = () => {
   }, [])
   console.log(helpimg);
   return (
-    <div>
-      {
-        helpimg && helpimg.map((x => (
-          <img src={x.image} alt="" />
-        )))
-      }
-    </div>
+    <section>
+      <section id='Help_main_top'>
+        <div>
+          {
+            helpimg && helpimg.map((x => (
+              <img src={x.image} alt="" />
+            )))
+          }
+          <div className="help_main_top_img_text">
+            <h1>WE'RE HERE TO HELP</h1>
+            <p>Let us know how we can help you by completing the form. We typically respond in 1-2 business days.</p>
+            <button>DROP US A LINE</button>
+          </div>
+          
+        </div>
+      </section>
+    </section>
   )
 }
 

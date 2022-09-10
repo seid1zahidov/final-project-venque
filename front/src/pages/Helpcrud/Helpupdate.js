@@ -16,7 +16,7 @@ const Helpupdate = () => {
         const fetcHandler = async () => {
             await axios.get(`http://localhost:3002/Help/${id}`)
                 .then(res => res.data)
-                .then(data => Setinputs(data.card))
+                .then(data => Setinputs(data.help))
                 .catch(err => console.log(err))
         }
         fetcHandler()
@@ -31,7 +31,7 @@ const Helpupdate = () => {
     const sendRequest = async () => {
         await axios.put(`http://localhost:3002/Help/${id}`, {
             image: String(inputs.image),
-        }).then(res => res.data.card)
+        }).then(res => res.data.help)
     }
 
     
