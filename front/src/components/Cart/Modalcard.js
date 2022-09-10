@@ -24,6 +24,7 @@ const Modalcard = ({ prod }) => {
                     <div className="modal_card_main_right_text">
                         <span>{prod.name}</span>
                         <p> ${prod.price}.00</p>
+                        <p> {prod.rate}</p>
                     </div>
                     <AiOutlineClose className='adds' onClick={() => { setCart(cart.filter(c => c._id !== prod._id)) }} />
                 </div>

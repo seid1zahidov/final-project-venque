@@ -23,11 +23,11 @@ const Cartdetails = () => {
     const slider_arr = slider && slider.map(item => {
         return item._id
     })
-
+    // http://localhost:3002/card
 
     useEffect(() => {
-        axios.get('http://localhost:3002/cart')
-            .then(res => Setslider(res.data.cart))
+        axios.get('http://localhost:3002/card')
+            .then(res => Setslider(res.data.card))
             .catch(error => console.log(error))
     }, [])
 
@@ -61,15 +61,16 @@ const Cartdetails = () => {
                                     </TableCell>
                                     <TableCell align="right">{row.name}</TableCell>
                                     <TableCell align="right">{row.price}</TableCell>
+                                    <TableCell align="right">{row.rate}</TableCell>
                                     <TableCell align="right">
                                         <NavLink to={`/cartupdate/${slider_arr[__id]}`} onClick={async() => {
-                                            await axios.put(`http://localhost:3002/cart/${slider_arr[__id]}`)
+                                            await axios.put(`http://localhost:3002/card/${slider_arr[__id]}`)
                                                 .then(res => res.data.cart)
                                         }} className=" btn btn-warning" >Update</NavLink>
                                     </TableCell>
                                     <TableCell align="right">
                                     <NavLink to={`/Admin/${slider_arr[__id]}`} onClick={async() => {
-                                            await axios.delete(`http://localhost:3002/cart/${slider_arr[__id]}`)
+                                            await axios.delete(`http://localhost:3002/card/${slider_arr[__id]}`)
                                                 .then(res => history('/cartdetails'))
                                         }} className=" btn btn-danger" >Delete</NavLink>
                                     </TableCell>

@@ -12,7 +12,7 @@ const SingleProduct = ({ prod }) => {
   const { cart, setCart } = useContext(Cart)
 
 
-
+  // ffcc6a
 
   return (
     <div className='products'>
@@ -20,6 +20,7 @@ const SingleProduct = ({ prod }) => {
       <div className="productsDesc">
         <span>{prod.name}</span>
         <p>${prod.price}.00</p>
+        <p className='rate'>{prod.rate}</p>
       </div>
       {cart.includes(prod) ? (
         <button className='add' onClick={() => { setCart(cart.filter(c => c._id !== prod._id)) }}>Remove to Carts</button>

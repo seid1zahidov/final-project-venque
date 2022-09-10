@@ -11,14 +11,16 @@ const Addslider = () => {
     const [inputs, setInputs] = useState({
         name: '',
         price: '',
-        image: ''
+        image: '',
+        rate: ''
     })
-
+    // http://localhost:3002/card
     const sendRequest = async () => {
-        await axios.post('http://localhost:3002/cart', {
+        await axios.post('http://localhost:3002/card', {
             name: String(inputs.name),
             price: Number(inputs.price),
-            image: String(inputs.image)
+            image: String(inputs.image),
+            rate: String(inputs.rate)
         }).then(res => res.data)
     }
 
@@ -47,8 +49,10 @@ const Addslider = () => {
                     <p>Price</p>
                     <input value={inputs.price} onChange={handleChange} name='price' type='text' />
                     <p>Image</p>
-                    <input type="text" value={inputs.image} onChange={handleChange} name='image' /> <br /> <br />
-                    <input type="submit" value="Add Slider" />
+                    <input type="text" value={inputs.image} onChange={handleChange} name='image' />
+                    <p>Rate</p>
+                    <input type="text" value={inputs.rate} onChange={handleChange} name='rate' />
+                    <input type="submit" value="Add Cart" />
                 </form>
             </div>
         </div>

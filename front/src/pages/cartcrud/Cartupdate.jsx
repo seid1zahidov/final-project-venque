@@ -15,9 +15,9 @@ const Cartupdate = () => {
 
     useEffect(() => {
         const fetcHandler = async () => {
-            await axios.get(`http://localhost:3002/cart/${id}`)
+            await axios.get(`http://localhost:3002/card/${id}`)
                 .then(res => res.data)
-                .then(data => Setinputs(data.cart))
+                .then(data => Setinputs(data.card))
                 .catch(err => console.log(err))
         }
         fetcHandler()
@@ -30,14 +30,15 @@ const Cartupdate = () => {
     }
 
     const sendRequest = async () => {   
-        await axios.put(`http://localhost:3002/cart/${id}`, {
+        await axios.put(`http://localhost:3002/card/${id}`, {
             name: String(inputs.name),
             price: Number(inputs.price),
-            image: String(inputs.image)
-        }).then(res => res.data.cart)
+            image: String(inputs.image),
+            rate: String(inputs.rate)
+        }).then(res => res.data.card)
     }
 
-
+    // http://localhost:3002/card
     const handleChange = (e) => {
         Setinputs((prevstate) => ({
             ...prevstate,
@@ -56,6 +57,8 @@ const Cartupdate = () => {
                 <input value={inputs.price} onChange={handleChange} name='price' type='text' />
                 <p>Image</p>
                 <input type="text" value={inputs.image} onChange={handleChange} name='image' />
+                <p>Rate</p>
+                <input type="text" value={inputs.rate} onChange={handleChange} name='rate' />
                 <input type="submit" value="Add Slider" />
             </form>
         </div>

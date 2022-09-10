@@ -13,6 +13,7 @@ import Shop from './pages/Shopcard/Shop';
 import Addshopimg from './Admin/shopimg/Addshopimg';
 import Shopimgdetails from './pages/Shopimgdetails/Shopimgdetails'
 import Shopimgupdate from './pages/Shopimgdetails/Shopimgupdate';
+import Contextd from './context/Contextd';
 
 
 function App() {
@@ -41,6 +42,10 @@ function App() {
             <Route path='/cartdetails' element = {<Cartdteails />}/>
             <Route path='/cartupdate/:id' element = {<Cartupdate />}/>
 
+            <Route path='/seids' element = {<Contextd />}/>
+
+
+            
 
         </Routes>
         <Footer />
