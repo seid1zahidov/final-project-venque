@@ -14,7 +14,11 @@ import Addshopimg from './Admin/shopimg/Addshopimg';
 import Shopimgdetails from './pages/Shopimgdetails/Shopimgdetails'
 import Shopimgupdate from './pages/Shopimgdetails/Shopimgupdate';
 import Contextd from './context/Contextd';
-
+import Help from './pages/Help'
+import AddHelpimg from './Admin/Helpimg/AddHelpimg';
+import Cartdetails from './pages/Shopimgdetails/Shopimgdetails';
+import Helpdetails from './pages/Helpcrud/Helpdetails';
+import Helpupdate from './pages/Helpcrud/Helpupdate';
 
 function App() {
   return (
@@ -31,6 +35,9 @@ function App() {
           <Route path='/shopimgAdd' element = {<Addshopimg />} />
           <Route path='/Shopimgdetails' element = {<Shopimgdetails />} />
           <Route path='/Shopimgupdate/:id' element = {<Shopimgupdate />} />
+          <Route path='/HelpimgAdd' element = {<AddHelpimg />} />
+          <Route path='/Helpdetails' element = {<Helpdetails />} />
+          <Route path='/Helpupdate/:id' element = {<Helpupdate />} />
             {/* users */}
             {/* end-users */}
 
@@ -43,6 +50,7 @@ function App() {
             <Route path='/cartupdate/:id' element = {<Cartupdate />}/>
 
             <Route path='/seids' element = {<Contextd />}/>
+            <Route path='/Help' element = {<Help/>}/>
 
 
             

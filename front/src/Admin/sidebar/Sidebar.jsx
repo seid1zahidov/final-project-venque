@@ -30,6 +30,12 @@ const Sidebars = () => {
       <Nav.Item>
         <Nav.Link className='eyni' href='/Shopimgdetails ' eventKey="link-2">Shop Image Details</Nav.Link>
       </Nav.Item>
+      <Nav.Item>
+        <Nav.Link className='eyni' href='/HelpimgAdd ' eventKey="link-2">Help Image Add</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link className='eyni' href='/Helpdetails ' eventKey="link-2">Help Details</Nav.Link>
+      </Nav.Item>
 
     </Nav>
   )

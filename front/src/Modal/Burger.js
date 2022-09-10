@@ -25,7 +25,9 @@ const Burger = ({ show, closeModal }) => {
                     <Link to='/About'>
                         <li>ABOUT</li>
                     </Link>
+                   <Link to='/Help'>
                     <li>HELP</li>
+                   </Link>
                 </ul>
                 <AiOutlineClose className='burgers' onClick={closeModal} />
             </div>
