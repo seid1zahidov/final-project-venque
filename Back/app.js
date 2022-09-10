@@ -5,6 +5,7 @@ const router = require('./routes/Images');
 const shopimgg = require('./routes/Shopimgroute');
 const Cards = require('./routes/Cards');
 const Help = require('./routes/Helproute');
+const Helpinput = require('./routes/Helpinput');
 
 // a
 const app = express();
@@ -16,6 +17,7 @@ app.use('/image',router)
 app.use('/shopimg',shopimgg)
 app.use('/Card',Cards)
 app.use('/Help',Help)
+app.use('/Helpinput',Helpinput)
 
 
 mongoose.connect('mongodb+srv://Seid:sjEfusrjE5g19Xsv@cluster0.89klq35.mongodb.net/venque?retryWrites=true&w=majority')
