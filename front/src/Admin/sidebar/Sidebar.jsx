@@ -36,6 +36,9 @@ const Sidebars = () => {
       <Nav.Item>
         <Nav.Link className='eyni' href='/Helpdetails ' eventKey="link-2">Help Details</Nav.Link>
       </Nav.Item>
+      <Nav.Item>
+        <Nav.Link className='eyni' href='/Complaint' eventKey="link-2">Complaint</Nav.Link>
+      </Nav.Item>
 
     </Nav>
   )

@@ -8,10 +8,14 @@ import { AiFillWechat } from 'react-icons/ai';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import TextareaAutosize from '@mui/base/TextareaAutosize';
+import { useNavigate } from 'react-router-dom'
 
 const Help = () => {
+  const history = useNavigate();
 
   const [helpimg, Sethelpimg] = useState()
+
+  const [helpinput, Helpinputs] = useState({})
 
   useEffect(() => {
     const Helpimages = () => {
@@ -22,7 +26,27 @@ const Help = () => {
     }
     Helpimages()
   }, [])
-  console.log(helpimg);
+
+  const sendRequest = async () => {
+    await axios.post(' http://localhost:3002/Helpinput', {
+        name: String(helpinput.name),
+        email: String(helpinput.email),
+        text: String(helpinput.text),
+    }).then(res => res.data)
+}
+
+
+  const handleChange = (e) => {
+    Helpinputs((prevstate) => ({
+      ...prevstate,
+      [e.target.name]: e.target.value
+    }))
+  }
+  const handleSubput = (e) => {
+    sendRequest();
+    sendRequest().then(() => history('/cartdetails'));
+  }
+
   return (
     <section>
       <section id='Help_main_top'>
@@ -64,23 +88,28 @@ const Help = () => {
         <div className="input_top">
           <span>CONTACT US - WE WILL RESPOND IN 24-48 HOURS</span>
         </div>
+  
         <div className="input_main_group">
-          <Form>
+          <Form onSubmit={handleSubput} >
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label></Form.Label>
-              <Form.Control className='input_main' type="text" placeholder="Full Name" />
+              <Form.Control value={helpinput.name} name="name" onChange={handleChange} className='input_main' type="text" placeholder="Full Name" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Control className='input_main' type="email" placeholder="Email" />
+              <Form.Control value={helpinput.email} name="email" onChange={handleChange} className='input_main' type="email" placeholder="Email" />
             </Form.Group>
             <TextareaAutosize
+              value={helpinput.text}
+              name="text"
+              onChange={handleChange}
               aria-label="empty textarea"
               placeholder="Empty"
               style={{ width: 500 }}
             /> <br /> <br />
+          <button type='submit'>Send</button>
+
           </Form>
-          
-          <button>Send</button>
+
 
         </div>
       </section>

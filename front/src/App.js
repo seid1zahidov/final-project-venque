@@ -16,9 +16,9 @@ import Shopimgupdate from './pages/Shopimgdetails/Shopimgupdate';
 import Contextd from './context/Contextd';
 import Help from './pages/Help'
 import AddHelpimg from './Admin/Helpimg/AddHelpimg';
-import Cartdetails from './pages/Shopimgdetails/Shopimgdetails';
 import Helpdetails from './pages/Helpcrud/Helpdetails';
 import Helpupdate from './pages/Helpcrud/Helpupdate';
+import Helpcomplaint from './pages/complaint/Helpcomplaint';
 
 function App() {
   return (
@@ -38,6 +38,7 @@ function App() {
           <Route path='/HelpimgAdd' element = {<AddHelpimg />} />
           <Route path='/Helpdetails' element = {<Helpdetails />} />
           <Route path='/Helpupdate/:id' element = {<Helpupdate />} />
+          <Route path='/Complaint' element = {<Helpcomplaint />} />
             {/* users */}
             {/* end-users */}
 
