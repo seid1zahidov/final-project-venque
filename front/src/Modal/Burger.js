@@ -21,7 +21,9 @@ const Burger = ({ show, closeModal }) => {
                     <Link to="/Technology">
                         <li>TECNOLOGY</li>
                     </Link>
+                    <Link to='/Community'>
                     <li>VENQUE COMMUNITY</li>
+                    </Link>
                     <Link to='/About'>
                         <li>ABOUT</li>
                     </Link>

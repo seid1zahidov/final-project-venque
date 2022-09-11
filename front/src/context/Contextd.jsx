@@ -18,7 +18,7 @@ const Contextd = ({ children }) => {
         }
         reducers()
     }, [])
-// s
+    
     const [states, dispatch] = useReducer(prodReducer, {
         rate: 0
     })

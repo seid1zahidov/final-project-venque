@@ -1,0 +1,15 @@
+.com_main_top_first img{
+    margin-top: 7rem;
+    width: 100%;
+    object-fit: cover;
+    height: 600px;
+}
+#Community_main{
+    margin-top: 2rem;
+}
+#Community_main p{
+    position: absolute;
+    top: 0;
+    left: 45%;
+    font-size: 13px;
+}

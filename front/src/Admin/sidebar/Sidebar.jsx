@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './sidebar.css'
 import SidebarMenu from 'react-bootstrap-sidebar-menu';
 import { Nav } from "react-bootstrap";
-import { withRouter } from "react-router";
+import Dropdown from 'react-bootstrap/Dropdown';
 
 const Sidebars = () => {
   return (
-    <Nav className="col-md-12 d-none d-md-block bg-light sidebar"
+    <Nav className="col-md-12 sidebar_main d-none d-md-block bg-light sidebar"
       activeKey="/home"
       onSelect={selectedKey => alert(`selected ${selectedKey}`)}
     >
@@ -39,6 +38,10 @@ const Sidebars = () => {
       <Nav.Item>
         <Nav.Link className='eyni' href='/Complaint' eventKey="link-2">Complaint</Nav.Link>
       </Nav.Item>
+      <Nav.Item>
+        <Nav.Link className='eyni' href='/Communitydetails' eventKey="link-2">Coomunity Details</Nav.Link>
+      </Nav.Item>
+
 
     </Nav>
   )

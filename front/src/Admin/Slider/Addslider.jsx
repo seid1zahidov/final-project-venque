@@ -51,7 +51,7 @@ const Addslider = () => {
                     <p>Image</p>
                     <input type="text" value={inputs.image} onChange={handleChange} name='image' />
                     <p>Rate</p>
-                    <input type="text" value={inputs.rate} onChange={handleChange} name='rate' />
+                    <input type="text" value={inputs.rate} onChange={handleChange} name='rate' /> <br /><br />
                     <input type="submit" value="Add Cart" />
                 </form>
             </div>

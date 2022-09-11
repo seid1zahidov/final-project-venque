@@ -19,6 +19,9 @@ import AddHelpimg from './Admin/Helpimg/AddHelpimg';
 import Helpdetails from './pages/Helpcrud/Helpdetails';
 import Helpupdate from './pages/Helpcrud/Helpupdate';
 import Helpcomplaint from './pages/complaint/Helpcomplaint';
+import Communitydetails from './pages/communitycrud/Communitydetails';
+import Community from './pages/Community';
+import Communitydetailsupdate from './pages/communitycrud/Communitydetailsupdate';
 
 function App() {
   return (
@@ -39,6 +42,9 @@ function App() {
           <Route path='/Helpdetails' element = {<Helpdetails />} />
           <Route path='/Helpupdate/:id' element = {<Helpupdate />} />
           <Route path='/Complaint' element = {<Helpcomplaint />} />
+          <Route path='/Community' element = {<Community />} />
+          <Route path='/Communitydetails' element = {<Communitydetails />}/>
+          <Route path='/Com1update/:id'  element = {<Communitydetailsupdate />}/>
             {/* users */}
             {/* end-users */}
 
