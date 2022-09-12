@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import SideBarDropDown from '../../Admin/sidebar/Sidebaar/SideBarDropDown '
 
-const Community6Add = () => {
+const Community7Add = () => {
 
     const history = useNavigate()
 
@@ -12,7 +12,7 @@ const Community6Add = () => {
     })
 
     const sendRequest = async () => {
-        await axios.post('http://localhost:3002/Community6', {
+        await axios.post('http://localhost:3002/Community7', {
             image: String(inputs.image)
         }).then(res => res.data)
     }
@@ -46,4 +46,4 @@ const Community6Add = () => {
     )
 }
 
-export default Community6Add
+export default Community7Add
