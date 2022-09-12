@@ -55,3 +55,12 @@
 .Community_img2{
     display: flex;
 }
+#Cominity_main_top_phot{position: relative;}
+.com_main_top_first1_son1 img{
+    position: relative;
+    width: 100%;
+}
+.community_photo_text{
+    top: 100px;
+    position: absolute;
+}

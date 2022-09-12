@@ -13,6 +13,7 @@ const Com4 = require('./routes/community4routes');
 const Com5 = require('./routes/community5routes');
 const Com6 = require('./routes/community6routes');
 const Com7 = require('./routes/community7routes');
+const Com8 = require('./routes/community8routes');
 
 
 const app = express();
@@ -32,6 +33,7 @@ app.use('/Community4',Com4)
 app.use('/Community5',Com5)
 app.use('/Community6',Com6)
 app.use('/Community7',Com7)
+app.use('/Community9',Com8)
 
 
 mongoose.connect('mongodb+srv://Seid:sjEfusrjE5g19Xsv@cluster0.89klq35.mongodb.net/venque?retryWrites=true&w=majority')

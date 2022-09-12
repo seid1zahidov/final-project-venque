@@ -9,6 +9,8 @@ const Community = () => {
   const [img3, Setim3] = useState()
   const [img4, Setim4] = useState()
   const [img5, Setim5] = useState()
+  const [img6, Setim6] = useState()
+  const [img7, Setim7] = useState()
 
 
   useEffect(() => {
@@ -46,7 +48,7 @@ const Community = () => {
   useEffect(() => {
     const com1 = () => {
       axios.get('http://localhost:3002/Community5')
-        .then(res => Setim5(res.data.com5))
+        .then(res => Setim4(res.data.com5))
         .catch(e => console.log(e))
     }
     com1()
@@ -54,11 +56,29 @@ const Community = () => {
   useEffect(() => {
     const com1 = () => {
       axios.get('http://localhost:3002/Community6')
-        .then(res => Setim4(res.data.com6))
+        .then(res => Setim5(res.data.com6))
         .catch(e => console.log(e))
     }
     com1()
   })
+  useEffect(() => {
+    const com1 = () => {
+      axios.get('http://localhost:3002/Community7')
+        .then(res => Setim6(res.data.com7))
+        .catch(e => console.log(e))
+    }
+    com1()
+  })
+ 
+  useEffect(() => {
+    const com1 = () => {
+      axios.get('http://localhost:3002/Community9')
+        .then(res => Setim7(res.data.com8))
+        .catch(e => console.log(e))
+    }
+    com1()
+  })
+  
   return (
     <section id='Community_main'>
       <p>10% OFF ON FIRST ORDER</p>
@@ -149,6 +169,7 @@ const Community = () => {
           </div>
         </div>
       </section>
+      <section>
       <div className='Community_img2'>
           <div className="col-lg-6 Community_img1_left  ">
             {
@@ -166,6 +187,41 @@ const Community = () => {
             <button>@ANDYHVU</button>
           </div>
         </div>
+      </section>
+      <section>
+      <div className='Community_img2'>
+          <div className="col-lg-6 Community_img1_left form order-2 ">
+            {
+              img6 && img6.map((x => (
+                <div className='com_main_top_first_img2 '>
+                  <img src={x.image} alt="" />
+                </div>
+              )))
+            }
+          </div>
+          <div className="col-lg-6 Community_img1_right">
+            <h1>ANDY</h1>
+            <span>Andy is a Los Angeles, USA-based photographer specializing in travel and landscape photography. He has traveled to many  </span>
+            <span>locations with our backpacks (Transit Travel Pro, Metro Classic, Campus Classic, and Alpine Rucksack).</span> <br />
+            <button>@ANDYHVU</button>
+          </div>
+        </div>
+      </section>
+
+       <section id='Cominity_main_top_phot  '>
+        {
+          img7 && img7.map((x => (
+            <div className='com_main_top_first1_son1'>
+              <img src={x.image} alt="" />
+            </div>
+          )))
+        }
+        <div className="community_photo_text">
+          <h2>JOIN US</h2>
+          <span>For collaboration, please contact to @venque on Instagram</span>
+          <button>@VENQUE</button>
+        </div>
+      </section>
 
     </section>
   )

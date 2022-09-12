@@ -38,7 +38,12 @@ import Community5update from './pages/communitycrud5/Community5update';
 import Community6details from './pages/communitycrud6/Community6details';
 import Community6updata from './pages/communitycrud6/Community6updata';
 import Community6Add from './pages/communitycrud6/Community6Add';
-
+import Community7details from './pages/communitycrud7/Community7details';
+import Community7Add from './pages/communitycrud7/Community7Add';
+import Community7update from './pages/communitycrud7/Community7update';
+import Community8Details from './pages/communitycrud8/Community8Details';
+import Community8Add from './pages/communitycrud8/Community8Add';
+import Community8update from './pages/communitycrud8/Community8update';
 
 function App() {
   return (
@@ -81,6 +86,13 @@ function App() {
           <Route path='/Communitydetails5' element = {<Community6details />} />
           <Route path='/Com6update/:id' element = {<Community6updata />} />
           <Route path='/Com6Add' element = {<Community6Add />} />
+          <Route path='/Communitydetails6' element = {<Community7details />} />
+          <Route path='/Com7update/:id' element = {<Community7update />} />
+          <Route path='/Com7Add' element = {<Community7Add />} />
+          <Route path='/Communitydetails7' element = {<Community8Details />} />
+          <Route path='/Com9Add' element = {<Community8Add />} />
+          <Route path='/Com9update/:id' element = {<Community8update />} />
+
 
 
 
