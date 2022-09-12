@@ -2,6 +2,8 @@ import { React, useState, useEffect } from 'react'
 import axios from 'axios'
 import { useNavigate, useParams } from 'react-router-dom'
 import './Cartupdate.css'
+import SideBarDropDown from '../../Admin/sidebar/Sidebaar/SideBarDropDown '
+
 const Cartupdate = () => {
 
 
@@ -47,8 +49,13 @@ const Cartupdate = () => {
     }
 
     return (
+        <div>
+            <div className="col-lg-2">
+            <SideBarDropDown/>
 
-        <div className='seid'>
+            </div>
+            <div className="col-lg-10">
+            <div className='seid'>
             <form onSubmit={handleSubmit}>
                 <h1 className="heading">Update Slider</h1>
                 <p>Name</p>
@@ -62,6 +69,9 @@ const Cartupdate = () => {
                 <input type="submit" value="Add Slider" />
             </form>
         </div>
+            </div>
+        </div>
+       
     )
 }
 

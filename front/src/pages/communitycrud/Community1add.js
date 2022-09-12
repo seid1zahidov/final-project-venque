@@ -1,11 +1,10 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import './addshopimg.css'
-import SideBarDropDown from '../sidebar/Sidebaar/SideBarDropDown '
+import Sidebar from '../../Admin/sidebar/Sidebar.jsx'
+import SideBarDropDown from '../../Admin/sidebar/Sidebaar/SideBarDropDown .js'
 
-const Addshopimg = () => {
-
+const Community1add = () => {
 
     const history = useNavigate()
 
@@ -14,7 +13,7 @@ const Addshopimg = () => {
     })
 
     const sendRequest = async () => {
-        await axios.post('http://localhost:3002/shopimg', {
+        await axios.post('http://localhost:3002/Community1', {
             image: String(inputs.image)
         }).then(res => res.data)
     }
@@ -31,14 +30,10 @@ const Addshopimg = () => {
         sendRequest().then(() => history('/Admin'));
     }
 
-
-
-    return (
-        <div className='Addsliderrow justify-content-center'>
+  return (
+    <div className='Addsliderrow justify-content-center'>
             <div className='col-lg-2'>
-      <SideBarDropDown/>
-        
-
+            <SideBarDropDown/>
             </div>
             <div className="col-lg-4 addslider container mt-5">
                 <form onSubmit={handleSubmit}>
@@ -48,7 +43,7 @@ const Addshopimg = () => {
                 </form>
             </div>
         </div>
-    )
+  )
 }
 
-export default Addshopimg
+export default Community1add

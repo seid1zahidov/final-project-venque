@@ -5,6 +5,8 @@ import { Table } from 'react-bootstrap';
 import { NavLink, useNavigate } from 'react-router-dom';
 import Sidebar from '../../Admin/sidebar/Sidebar.jsx'
 import './Helpcrud.css'
+import SideBarDropDown from '../../Admin/sidebar/Sidebaar/SideBarDropDown .js';
+
 
 const Helpdetails = () => {
 
@@ -27,7 +29,8 @@ const Helpdetails = () => {
     return (
         <div className="cartddetails">
             <div className="col-lg-2">
-                <Sidebar />
+            <SideBarDropDown/>
+
             </div>
             <div className="col-lg-10 cartdetail">
                 <TableContainer component={Paper}>

@@ -5,12 +5,13 @@ import Sidebar from '../../Admin/sidebar/Sidebar'
 import WidgetLg from '../../Admin/widgetLg/WidgetLg'
 import WidgetSm from '../../Admin/widgetSm/WidgetSm'
 import './home.css'
+import SideBarDropDown from '../../Admin/sidebar/Sidebaar/SideBarDropDown '
 
 const Home = () => {
   return (
    <section id='Home'>
     <div className="col-lg-3 deneme1">
-      <Sidebar />
+    <SideBarDropDown/>
     </div>
     <div className="col-lg-9 deneme">
     <div className='homePage'>

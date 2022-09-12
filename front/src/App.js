@@ -22,6 +22,13 @@ import Helpcomplaint from './pages/complaint/Helpcomplaint';
 import Communitydetails from './pages/communitycrud/Communitydetails';
 import Community from './pages/Community';
 import Communitydetailsupdate from './pages/communitycrud/Communitydetailsupdate';
+import Community1add from './pages/communitycrud/Community1add';
+import Community2update from './pages/communitycrud2/Community2update';
+import Community2details from '../src/pages/communitycrud2/Community2details'
+import Community2Add from './pages/communitycrud2/Community2Add';
+import Community3details from './pages/communitycrud3/Community3details';
+import Community3Add from './pages/communitycrud3/Community3Add';
+import Community3update from './pages/communitycrud3/Community3update';
 
 function App() {
   return (
@@ -33,34 +40,35 @@ function App() {
           <Route path='/' element={<Main />} />
           <Route path='/About' element={<About />} />
           <Route path='/Technology' element={<Technology />} />
-          <Route path='/Shop' element = {<Shop />} />
+          <Route path='/Shop' element={<Shop />} />
           <Route path='/Admin' element={<Home />} />
-          <Route path='/shopimgAdd' element = {<Addshopimg />} />
-          <Route path='/Shopimgdetails' element = {<Shopimgdetails />} />
-          <Route path='/Shopimgupdate/:id' element = {<Shopimgupdate />} />
-          <Route path='/HelpimgAdd' element = {<AddHelpimg />} />
-          <Route path='/Helpdetails' element = {<Helpdetails />} />
-          <Route path='/Helpupdate/:id' element = {<Helpupdate />} />
-          <Route path='/Complaint' element = {<Helpcomplaint />} />
-          <Route path='/Community' element = {<Community />} />
-          <Route path='/Communitydetails' element = {<Communitydetails />}/>
-          <Route path='/Com1update/:id'  element = {<Communitydetailsupdate />}/>
-            {/* users */}
-            {/* end-users */}
-
-            {/* products */}
-
-
-            {/* end-products */}
-            <Route path='/cart' element={<Addslider />} />
-            <Route path='/cartdetails' element = {<Cartdteails />}/>
-            <Route path='/cartupdate/:id' element = {<Cartupdate />}/>
-
-            <Route path='/seids' element = {<Contextd />}/>
-            <Route path='/Help' element = {<Help/>}/>
+          <Route path='/shopimgAdd' element={<Addshopimg />} />
+          <Route path='/Shopimgdetails' element={<Shopimgdetails />} />
+          <Route path='/Shopimgupdate/:id' element={<Shopimgupdate />} />
+          <Route path='/HelpimgAdd' element={<AddHelpimg />} />
+          <Route path='/Helpdetails' element={<Helpdetails />} />
+          <Route path='/Helpupdate/:id' element={<Helpupdate />} />
+          <Route path='/Complaint' element={<Helpcomplaint />} />
+          <Route path='/Community' element={<Community />} />
+          <Route path='/Communitydetails' element={<Communitydetails />} />
+          <Route path='/Com1update/:id' element={<Communitydetailsupdate />} />
+          <Route path='/Com1Add' element={<Community1add />} />
+          <Route path='/Communitydetails1' element={<Community2details />} />
+          <Route path='/Com2Add' element={<Community2Add />} />
+          <Route path='/Com2update/:id' element={<Community2update />} />
+          <Route path='/cart' element={<Addslider />} />
+          <Route path='/cartdetails' element={<Cartdteails />} />
+          <Route path='/cartupdate/:id' element={<Cartupdate />} />
+          <Route path='/Communitydetails2' element = {<Community3details />} />
+          <Route path='/Com3Add' element = {<Community3Add />} />
+          <Route path='/Com3update/:id' element = {<Community3update />} />
 
 
-            
+          <Route path='/seids' element={<Contextd />} />
+          <Route path='/Help' element={<Help />} />
+
+
+
 
         </Routes>
         <Footer />

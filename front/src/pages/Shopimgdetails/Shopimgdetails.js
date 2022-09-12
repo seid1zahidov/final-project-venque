@@ -13,6 +13,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Sidebars from  '../../Admin/sidebar/Sidebar'
+import SideBarDropDown from '../../Admin/sidebar/Sidebaar/SideBarDropDown ';
 
 const Cartdetails = () => {
 
@@ -35,7 +36,8 @@ const Cartdetails = () => {
     return (
         <section id='Shopimgdetails'>
             <div className="col-lg-2">
-                <Sidebars />
+            <SideBarDropDown/>
+
             </div>
             <div className="col-lg-10">
                 <div className="col-lg-10 cartdetail">

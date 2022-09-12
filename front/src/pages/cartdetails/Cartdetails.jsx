@@ -13,6 +13,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Sidebar from '../../Admin/sidebar/Sidebar';
+import SideBarDropDown from '../../Admin/sidebar/Sidebaar/SideBarDropDown ';
 
 const Cartdetails = () => {
 
@@ -36,7 +37,8 @@ const Cartdetails = () => {
 
        <div className="cartddetails">
         <div className="col-lg-2">
-        <Sidebar />
+        <SideBarDropDown/>
+
         </div>
          <div className="col-lg-10 cartdetail">
             <TableContainer component={Paper}>

@@ -7,6 +7,8 @@ const Cards = require('./routes/Cards');
 const Help = require('./routes/Helproute');
 const Helpinput = require('./routes/Helpinput');
 const Com1 = require('./routes/Community1');
+const Com2 = require('./routes/community2');
+const Com3 = require('./routes/Community3route');
 
 // a
 const app = express();
@@ -20,6 +22,8 @@ app.use('/Card',Cards)
 app.use('/Help',Help)
 app.use('/Helpinput',Helpinput)
 app.use('/Community1',Com1)
+app.use('/Community2',Com2)
+app.use('/Community3',Com3)
 
 
 mongoose.connect('mongodb+srv://Seid:sjEfusrjE5g19Xsv@cluster0.89klq35.mongodb.net/venque?retryWrites=true&w=majority')

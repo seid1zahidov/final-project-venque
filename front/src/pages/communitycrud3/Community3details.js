@@ -1,15 +1,12 @@
-import { Paper, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material'
-import axios from 'axios'
+import { Paper, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
+import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { Table } from 'react-bootstrap'
-import { NavLink, useNavigate } from 'react-router-dom'
-import './Communitydetails.css'
-import SideBarDropDown from '../../Admin/sidebar/Sidebaar/SideBarDropDown .js'
+import { Table } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
+import SideBarDropDown from '../../Admin/sidebar/Sidebaar/SideBarDropDown ';
+import './Community3.css'
 
-
-
-
-const Communitydetails = () => {
+const Community3details = () => {
 
 
   const history = useNavigate();
@@ -21,18 +18,15 @@ const Communitydetails = () => {
   })
 
   useEffect(() => {
-    axios.get('http://localhost:3002/Community1')
-      .then(res => Setslider(res.data.com1))
+    axios.get('http://localhost:3002/Community3')
+      .then(res => Setslider(res.data.com3))
       .catch(error => console.log(error))
   }, [])
-
-
-
 
   return (
     <div className="cartddetails">
       <div className="col-lg-2">
-      <SideBarDropDown/>
+        <SideBarDropDown />
 
       </div>
       <div className="col-lg-10 cartdetail">
@@ -56,26 +50,26 @@ const Communitydetails = () => {
                     <img className='cartdetailimg' src={row.image} alt={row.name} />
                   </TableCell>
                   <TableCell align="right">
-                    <NavLink to={`/Com1update/${slider_arr[__id]}`} onClick={async () => {
-                      await axios.put(`http://localhost:3002/Community1/${slider_arr[__id]}`)
-                        .then(res => res.data.cart)
-                    }} className=" btn btn-warning" >Update</NavLink>
+                    <Link to={`/Com3update/${slider_arr[__id]}`} onClick={async () => {
+                      await axios.put(`http://localhost:3002/Community3/${slider_arr[__id]}`)
+                        .then(res => res.data)
+                    }} className=" btn detailsbutton btn-warning" >Update</Link>
                   </TableCell>
                   <TableCell align="right">
-                    <NavLink to={`/Admin/${slider_arr[__id]}`} onClick={async () => {
-                      await axios.delete(`http://localhost:3002/Community1/${slider_arr[__id]}`)
+                    <Link to={`/Admin/${slider_arr[__id]}`} onClick={async () => {
+                      await axios.delete(`http://localhost:3002/Community3/${slider_arr[__id]}`)
                         .then(res => history('/Admin'))
-                    }} className=" btn btn-danger" >Delete</NavLink>
+                    }} className=" btn detailsbutton btn-danger" >Delete</Link>
                   </TableCell>
                 </TableRow>
               ))}
             </TableBody>
           </Table>
         </TableContainer>
-        <NavLink to='/Com1Add' className=" btn btn-success Detailscom1" >Add img</NavLink>
+        <Link to='/Com3Add' className=" btn btn-success Detailscom2 " >Add img</Link>
       </div>
     </div>
   )
 }
 
-export default Communitydetails
+export default Community3details

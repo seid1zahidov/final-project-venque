@@ -1,0 +1,9 @@
+.dropmenu .admin a:hover{
+    color: white;
+}
+.dropmenu:hover{
+    overflow-y: scroll;
+ }
+ .dropmenu::-webkit-scrollbar{
+    display: none;
+ }

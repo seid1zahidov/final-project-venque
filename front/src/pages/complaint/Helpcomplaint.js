@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { Table } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from '../../Admin/sidebar/Sidebar.jsx';
+import SideBarDropDown from '../../Admin/sidebar/Sidebaar/SideBarDropDown .js';
 
 
 const Helpcomplaint = () => {
@@ -28,7 +29,8 @@ const Helpcomplaint = () => {
     return (
         <div className="cartddetails">
             <div className="col-lg-2">
-                <Sidebar />
+            <SideBarDropDown/>
+
             </div>
             <div className="col-lg-10 cartdetail">
                 <TableContainer component={Paper}>

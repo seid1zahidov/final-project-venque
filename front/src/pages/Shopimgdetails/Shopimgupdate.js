@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
+import SideBarDropDown from '../../Admin/sidebar/Sidebaar/SideBarDropDown ';
 
 const Shopimgupdate = () => {
     
@@ -42,7 +43,12 @@ const Shopimgupdate = () => {
 
 
   return (
-    <div className='seid'>
+    <div>
+        <div className="col-lg-2">
+        <SideBarDropDown />
+        </div>
+        <div className="col-lg-10">
+        <div className='seid'>
     <form onSubmit={handleSubmit}>
         <h1 className="heading">Update Slider</h1>
         <p>Image</p>
@@ -50,6 +56,8 @@ const Shopimgupdate = () => {
         <input type="submit" value="Add Slider" />
     </form>
 </div>
+        </div>
+    </div>
   )
 }
 

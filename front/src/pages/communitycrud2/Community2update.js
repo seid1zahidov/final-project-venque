@@ -2,8 +2,9 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import SideBarDropDown from '../../Admin/sidebar/Sidebaar/SideBarDropDown ';
+import './Community2.css'
 
-const Communitydetailsupdate = () => {
+const Community2update = () => {
 
     const history = useNavigate();
 
@@ -15,9 +16,9 @@ const Communitydetailsupdate = () => {
 
     useEffect(() => {
         const fetcHandler = async () => {
-            await axios.get(`http://localhost:3002/Community1/${id}`)
+            await axios.get(`http://localhost:3002/Community2/${id}`)
                 .then(res => res.data)
-                .then(data => Setinputs(data.com1))
+                .then(data => Setinputs(data.com2))
                 .catch(err => console.log(err))
         }
         fetcHandler()
@@ -26,13 +27,13 @@ const Communitydetailsupdate = () => {
 
     const handleSubmit = (e) => {
         sendRequest();
-        sendRequest().then(() => history('/Communitydetails'));
+        sendRequest().then(() => history('/Communitydetails1'));
     }
 
     const sendRequest = async () => {
-        await axios.put(`http://localhost:3002/Community1/${id}`, {
+        await axios.put(`http://localhost:3002/Community2/${id}`, {
             image: String(inputs.image),
-        }).then(res => res.data.com1)
+        }).then(res => res.data.com2)
     }
     const handleChange = (e) => {
         Setinputs((prevstate) => ({
@@ -45,7 +46,6 @@ const Communitydetailsupdate = () => {
         <div>
             <div className="col-lg-2">
                 <SideBarDropDown />
-
             </div>
             <div className="col-lg-10">
                 <div className='seid'>
@@ -61,4 +61,4 @@ const Communitydetailsupdate = () => {
     )
 }
 
-export default Communitydetailsupdate
+export default Community2update
