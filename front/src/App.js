@@ -29,6 +29,9 @@ import Community2Add from './pages/communitycrud2/Community2Add';
 import Community3details from './pages/communitycrud3/Community3details';
 import Community3Add from './pages/communitycrud3/Community3Add';
 import Community3update from './pages/communitycrud3/Community3update';
+import Community4details from './pages/communitycrud4/Community4details';
+import Community4update from './pages/communitycrud4/Community4update';
+import Community4Add from './pages/communitycrud4/Community4Add';
 
 function App() {
   return (
@@ -62,7 +65,9 @@ function App() {
           <Route path='/Communitydetails2' element = {<Community3details />} />
           <Route path='/Com3Add' element = {<Community3Add />} />
           <Route path='/Com3update/:id' element = {<Community3update />} />
-
+          <Route path='/Communitydetails3' element = {<Community4details />} />
+          <Route path='/Com4update/:id' element = {<Community4update />} />
+          <Route path='/Com4Add' element = {<Community4Add />} />
 
           <Route path='/seids' element={<Contextd />} />
           <Route path='/Help' element={<Help />} />
