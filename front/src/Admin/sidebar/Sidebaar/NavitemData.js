@@ -36,8 +36,9 @@ export const NavitemData = [
             { title: 'Communitydetails', to: '/Communitydetails' },
             { title: 'Communitydetails1', to: '/Communitydetails1' },
             { title: 'Communitydetails2', to: '/Communitydetails2' },
-            { title: 'Communitydetails3', to: '/Communitydetails3' }
-
+            { title: 'Communitydetails3', to: '/Communitydetails3' },
+            { title: 'Communitydetails4', to: '/Communitydetails4' },
+            { title: 'Communitydetails5', to: '/Communitydetails5' }
         ],
         open: false,
     },

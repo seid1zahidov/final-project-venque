@@ -32,6 +32,13 @@ import Community3update from './pages/communitycrud3/Community3update';
 import Community4details from './pages/communitycrud4/Community4details';
 import Community4update from './pages/communitycrud4/Community4update';
 import Community4Add from './pages/communitycrud4/Community4Add';
+import Community5details from './pages/communitycrud5/Community5details';
+import Community5Add from './pages/communitycrud5/Community5Add';
+import Community5update from './pages/communitycrud5/Community5update';
+import Community6details from './pages/communitycrud6/Community6details';
+import Community6updata from './pages/communitycrud6/Community6updata';
+import Community6Add from './pages/communitycrud6/Community6Add';
+
 
 function App() {
   return (
@@ -68,6 +75,16 @@ function App() {
           <Route path='/Communitydetails3' element = {<Community4details />} />
           <Route path='/Com4update/:id' element = {<Community4update />} />
           <Route path='/Com4Add' element = {<Community4Add />} />
+          <Route path='/Communitydetails4' element = {<Community5details />} />
+          <Route path='/Com5Add' element = {<Community5Add />} />
+          <Route path='/Com5update/:id' element = {<Community5update />} />
+          <Route path='/Communitydetails5' element = {<Community6details />} />
+          <Route path='/Com6update/:id' element = {<Community6updata />} />
+          <Route path='/Com6Add' element = {<Community6Add />} />
+
+
+
+
 
           <Route path='/seids' element={<Contextd />} />
           <Route path='/Help' element={<Help />} />
