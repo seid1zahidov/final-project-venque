@@ -69,7 +69,7 @@ const Community = () => {
     }
     com1()
   })
- 
+
   useEffect(() => {
     const com1 = () => {
       axios.get('http://localhost:3002/Community9')
@@ -78,7 +78,7 @@ const Community = () => {
     }
     com1()
   })
-  
+
   return (
     <section id='Community_main'>
       <p>10% OFF ON FIRST ORDER</p>
@@ -170,7 +170,7 @@ const Community = () => {
         </div>
       </section>
       <section>
-      <div className='Community_img2'>
+        <div className='Community_img2'>
           <div className="col-lg-6 Community_img1_left  ">
             {
               img5 && img5.map((x => (
@@ -189,7 +189,7 @@ const Community = () => {
         </div>
       </section>
       <section>
-      <div className='Community_img2'>
+        <div className='Community_img2'>
           <div className="col-lg-6 Community_img1_left form order-2 ">
             {
               img6 && img6.map((x => (
@@ -208,7 +208,7 @@ const Community = () => {
         </div>
       </section>
 
-       <section id='Cominity_main_top_phot  '>
+      <section id='Cominity_main_top_phot  '>
         {
           img7 && img7.map((x => (
             <div className='com_main_top_first1_son1'>
@@ -218,9 +218,10 @@ const Community = () => {
         }
         <div className="community_photo_text">
           <h2>JOIN US</h2>
-          <span>For collaboration, please contact to @venque on Instagram</span>
+          <span>For collaboration, please contact to @venque on Instagram</span> <br /> <br />
           <button>@VENQUE</button>
         </div>
+
       </section>
 
     </section>

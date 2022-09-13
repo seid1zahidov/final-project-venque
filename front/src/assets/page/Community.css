@@ -57,10 +57,28 @@
 }
 #Cominity_main_top_phot{position: relative;}
 .com_main_top_first1_son1 img{
+    margin-top: 5rem;
     position: relative;
     width: 100%;
 }
 .community_photo_text{
-    top: 100px;
+    text-align: center;
     position: absolute;
+    top: 300rem;
+    left: 41rem;
+}
+.community_photo_text h2{
+    color: #fff;
+    font-size: 35px;
+}
+.community_photo_text span{
+    color: #fff;
+    font-size: 15px;
+}
+.community_photo_text button{
+    padding: 13px 90px 13px 90px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 13px;
 }
