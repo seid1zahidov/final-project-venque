@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import SideBarDropDown from '../../Admin/sidebar/Sidebaar/SideBarDropDown '
 
-const Community8Add = () => {
+const Community9Add = () => {
 
     const history = useNavigate()
 
@@ -12,7 +12,7 @@ const Community8Add = () => {
     })
 
     const sendRequest = async () => {
-        await axios.post('http://localhost:3002/Community9', {
+        await axios.post('http://localhost:3002/Community10', {
             image: String(inputs.image)
         }).then(res => res.data)
     }
@@ -29,21 +29,21 @@ const Community8Add = () => {
         sendRequest().then(() => history('/Admin'));
     }
 
-
   return (
-      <div className='Addsliderrow justify-content-center'>
-          <div className='col-lg-2'>
-              <SideBarDropDown />
-          </div>
-          <div className="col-lg-4 addslider container mt-5">
-              <form onSubmit={handleSubmit}>
-                  <p>Image</p>
-                  <input type="text" value={inputs.image} onChange={handleChange} name='image' /> <br /> <br />
-                  <input type="submit" value="Add IMAGE" />
-              </form>
-          </div>
-      </div>
+    <div className='Addsliderrow justify-content-center'>
+    <div className='col-lg-2'>
+        <SideBarDropDown />
+    </div>
+    <div className="col-lg-4 addslider container mt-5">
+        <form onSubmit={handleSubmit}>
+            <p>Image</p>
+            <input type="text" value={inputs.image} onChange={handleChange} name='image' /> <br /> <br />
+            <input type="submit" value="Add IMAGE" />
+        </form>
+    </div>
+</div>
+
   )
 }
 
-export default Community8Add
+export default Community9Add

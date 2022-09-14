@@ -44,6 +44,12 @@ import Community7update from './pages/communitycrud7/Community7update';
 import Community8Details from './pages/communitycrud8/Community8Details';
 import Community8Add from './pages/communitycrud8/Community8Add';
 import Community8update from './pages/communitycrud8/Community8update';
+import Community9Details from './pages/communitycrud9/Community9Details';
+import Community9Add from './pages/communitycrud9/Community9Add';
+import Community10update from './pages/communitycrud9/Community10update';
+import Community11Add from './pages/communitycrud10/Community11Add';
+import Community11Details from './pages/communitycrud10/Community11Details';
+import Community11update from './pages/communitycrud10/Community11update';
 
 function App() {
   return (
@@ -92,18 +98,14 @@ function App() {
           <Route path='/Communitydetails7' element = {<Community8Details />} />
           <Route path='/Com9Add' element = {<Community8Add />} />
           <Route path='/Com9update/:id' element = {<Community8update />} />
-
-
-
-
-
-
+          <Route path='/Communitydetails8' element = {<Community9Details />} />
+          <Route path='/Com10Add' element = {<Community9Add />} />
+          <Route path='/Com10update/:id' element = {<Community10update />} />
+          <Route path='/Com12Add' element = {<Community11Add />} />
+          <Route path='/Communitydetails9' element = {<Community11Details />} />
+          <Route path='/Com12update/:id' element = {<Community11update />} />
           <Route path='/seids' element={<Contextd />} />
           <Route path='/Help' element={<Help />} />
-
-
-
-
         </Routes>
         <Footer />
       </BrowserRouter>
