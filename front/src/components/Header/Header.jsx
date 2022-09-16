@@ -30,7 +30,9 @@ const Header = () => {
               </Link>
             </div>
             <div className="col-lg-2 col-4 headerright text-end">
-                <BsPerson className='person' />
+              <Link to='/login'>
+              <BsPerson className='person' />
+              </Link>
                 <BsBasketFill className='righticon' onClick={() => CartShow((s) => !s)}/>
                    <Card  show={carts} closeModal ={() => CartShow(false)} />
                   ({cart.length})

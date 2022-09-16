@@ -50,6 +50,7 @@ import Community10update from './pages/communitycrud9/Community10update';
 import Community11Add from './pages/communitycrud10/Community11Add';
 import Community11Details from './pages/communitycrud10/Community11Details';
 import Community11update from './pages/communitycrud10/Community11update';
+import SigininScreen from './components/Siginin/SigininScreen';
 
 function App() {
   return (
@@ -104,6 +105,7 @@ function App() {
           <Route path='/Com12Add' element = {<Community11Add />} />
           <Route path='/Communitydetails9' element = {<Community11Details />} />
           <Route path='/Com12update/:id' element = {<Community11update />} />
+          <Route path='/login' element = {<SigininScreen />} />
           <Route path='/seids' element={<Contextd />} />
           <Route path='/Help' element={<Help />} />
         </Routes>
