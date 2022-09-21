@@ -43,6 +43,9 @@ const Burger = () => {
                             <Link to='/Help'>
                                 <li>HELP</li>
                             </Link>
+                            <Link to='/Faqpage'>
+                                <li>Faq</li>
+                            </Link>
                         </ul>
                 </Offcanvas.Body>
             </Offcanvas>

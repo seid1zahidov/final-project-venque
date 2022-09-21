@@ -51,6 +51,10 @@ import Community11Add from './pages/communitycrud10/Community11Add';
 import Community11Details from './pages/communitycrud10/Community11Details';
 import Community11update from './pages/communitycrud10/Community11update';
 import SigininScreen from './components/Siginin/SigininScreen';
+import Suppordetails from './pages/support/suppordetails';
+import SupporAdd from './pages/support/SupporAdd';
+import Supportupdate from './pages/support/supportupdate';
+import FaqPage from './pages/FaqPage';
 
 function App() {
   return (
@@ -108,6 +112,10 @@ function App() {
           <Route path='/login' element = {<SigininScreen />} />
           <Route path='/seids' element={<Contextd />} />
           <Route path='/Help' element={<Help />} />
+          <Route path='/faq' element={<Suppordetails />} />
+          <Route path='/FaqAdd' element={<SupporAdd />} />
+          <Route path='/Faqupdate/:id' element={<Supportupdate />} />
+          <Route path='/Faqpage' element={<FaqPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
