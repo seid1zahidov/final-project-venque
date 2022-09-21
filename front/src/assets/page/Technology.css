@@ -71,3 +71,15 @@
 .techno4left p{
     font-size: 13px;
 }
+@media(max-width: 576px){
+    .tecno1right{
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .techno3left img{
+        width: 100%;
+        object-fit: cover;
+        height: 400px;
+    }
+}

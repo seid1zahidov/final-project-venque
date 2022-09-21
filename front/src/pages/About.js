@@ -108,9 +108,7 @@ const About = () => {
               <h1 className='ilkin'>MADE TO LAST</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo obcaecati saepe aliquid soluta facilis architecto eaque veritatis, dolor, nostrum ab esse quaerat sed dignissimos voluptatum perspiciatis, modi quibusdam nam eos?</p>
             </div>
-            <div className="col-lg-6 right-right">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ducimus officiis temporibus</p>
-            </div>
+            
           </div>
         </div>
       </section>

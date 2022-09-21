@@ -10,7 +10,6 @@ const Footer = () => {
                     <div className="col-lg-2  footerleft ">
                         <img src="https://cdn.shopify.com/s/files/1/1592/8017/files/venque_logo_png_130x.png?v=1563480147" alt="sekill" />
                         <h4>INSTAGAM</h4>
-                        <AiOutlineInstagram className='instagram' />
                     </div>
                     <div className="col-lg-3  mt-5">
                         <ul>

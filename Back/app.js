@@ -17,6 +17,7 @@ const Com8 = require('./routes/community8routes');
 const Com9 = require('./routes/community9routes');
 const Com10 = require('./routes/community10routes');
 const Com11 = require('./routes/community11toutes');
+const support = require('./routes/supporoutes');
 const bodyParser = require('body-parser');
 
 
@@ -42,6 +43,7 @@ app.use('/Community9',Com8)
 app.use('/Community10',Com9)
 app.use('/Community11',Com10)
 app.use('/Community12',Com11)
+app.use('/support',support)
 
 
 mongoose.connect('mongodb+srv://Seid:sjEfusrjE5g19Xsv@cluster0.89klq35.mongodb.net/venque?retryWrites=true&w=majority')

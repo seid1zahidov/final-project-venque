@@ -99,15 +99,15 @@ const Help = () => {
               <Form.Control value={helpinput.email} name="email" onChange={handleChange} className='input_main' type="email" placeholder="Email" />
             </Form.Group>
             <TextareaAutosize
+            className='ms-3'
               value={helpinput.text}
               name="text"
               onChange={handleChange}
               aria-label="empty textarea"
               placeholder="Empty"
-              style={{ width: 500 }}
+              style={{ width: 370 }}
             /> <br /> <br />
-          <button type='submit'>Send</button>
-
+          <button className='Help_button' type='submit'>Send</button>
           </Form>
 
 

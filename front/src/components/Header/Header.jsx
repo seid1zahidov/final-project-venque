@@ -19,10 +19,9 @@ const Header = () => {
     <header id='header'>
           <div className='containers '>
          <div className="row headerss align-items-center">
-            <div className="col-lg-2 col-4 text-start">
-            <GiHamburgerMenu className='menu' onClick={() => setShow((s) => !s)}/>
-                   <Burger  show={show} closeModal ={() => setShow(false)} />
-                <AiOutlineSearch className='search'/>
+            <div className="col-lg-2 col-4 text-start d-flex">
+                   <Burger  />
+                <AiOutlineSearch className='search  ms-5'/>
             </div>
             <div className="col-lg-8 col-4 text-center headercenter">
               <Link to="/" >

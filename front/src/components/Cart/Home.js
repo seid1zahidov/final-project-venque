@@ -47,7 +47,6 @@ const Home = () => {
         {cart && cart.slice(0, 7).map((prod => (
           <SwiperSlide>
             <SingleProduct prod={prod} key={prod._id} />
-
           </SwiperSlide>
         )))}
 
