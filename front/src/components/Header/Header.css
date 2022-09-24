@@ -26,3 +26,8 @@
     margin-left: 10px;
     position: absolute;
 }
+@media (max-width: 576px){
+    .row{
+        padding: 0 0rem;
+    }
+}
