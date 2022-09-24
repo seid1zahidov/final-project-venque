@@ -1,14 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../assets/page/Technology.css'
 import { BsShieldCheck } from 'react-icons/bs';
+import axios from 'axios';
 
 const Technology = () => {
+
+    const [state , Setstate] = useState()
+
+    useEffect(() => {
+        const tec1 = () => {
+          axios.get('http://localhost:3002/tecno1')
+            .then(res => Setstate(res.data.first))
+            .catch(e => console.log(e))
+        }
+        tec1()
+      }, [])
+
+
+
     return (
         <section>
             <section id='tecno1'>
                 <div className="rows">
                     <div className="col-lg-6">
-                        <img src="https://cdn.shopify.com/s/files/1/1592/8017/files/VENQUE_Studio__WEB12.jpg?v=1647542036" alt="" />
+                        {
+                            state && state.map((x) => (
+                                <img src={x.image} alt="" />
+                            ))
+                        }
                     </div>
                     <div className="col-lg-6 tecno1right">
                         <h1>A Decade of Innovation</h1>
@@ -30,7 +49,7 @@ const Technology = () => {
                     <div className="col-lg-6 techno3left">
                         <img src="https://cdn.shopify.com/s/files/1/1592/8017/files/Add_a_subheading_1.png?v=1647542226" alt="" />
                     </div>
-                    <div className="col-lg-6 tecno3right">
+                    <div className="col-lg-6 techno3left">
                         <img src="https://cdn.shopify.com/s/files/1/1592/8017/files/Add_a_subheading_2.png?v=1647542240" alt="" />
                     </div>
                 </div>
