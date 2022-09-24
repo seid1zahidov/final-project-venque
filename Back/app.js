@@ -18,6 +18,7 @@ const Com9 = require('./routes/community9routes');
 const Com10 = require('./routes/community10routes');
 const Com11 = require('./routes/community11toutes');
 const support = require('./routes/supporoutes');
+const tecnoroute1 = require('./routes/tecnoroute/firstroute');
 const bodyParser = require('body-parser');
 
 
@@ -43,6 +44,7 @@ app.use('/Community9',Com8)
 app.use('/Community10',Com9)
 app.use('/Community11',Com10)
 app.use('/Community12',Com11)
+app.use('/tecno1',tecnoroute1)
 app.use('/support',support)
 
 

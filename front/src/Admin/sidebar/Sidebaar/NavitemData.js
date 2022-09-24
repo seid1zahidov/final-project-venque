@@ -54,9 +54,9 @@ export const NavitemData = [
         open: false,
     },
     {
-        name: "Contact",
+        name: "Tecnology",
         links: [
-            { title: 'Contact Detail', to: '/contactdetail' },
+            { title: 'Tecnology1', to: '/Tecnologydetails' },
         ],
         open: false,
     },

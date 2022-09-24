@@ -55,6 +55,9 @@ import Suppordetails from './pages/support/suppordetails';
 import SupporAdd from './pages/support/SupporAdd';
 import Supportupdate from './pages/support/supportupdate';
 import FaqPage from './pages/FaqPage';
+import Tecno1Details from './pages/TecnologyAdmin/Tecno1/Tecno1Details';
+import Tecno1Add from './pages/TecnologyAdmin/Tecno1/Tecno1Add';
+import Tecno1update from './pages/TecnologyAdmin/Tecno1/Tecno1update';
 
 function App() {
   return (
@@ -115,6 +118,9 @@ function App() {
           <Route path='/faq' element={<Suppordetails />} />
           <Route path='/FaqAdd' element={<SupporAdd />} />
           <Route path='/Faqupdate/:id' element={<Supportupdate />} />
+          <Route path='/Tecnologydetails' element={<Tecno1Details />} />
+          <Route path='/Tecno1Add' element={<Tecno1Add />} />
+          <Route path='/Tecno1update/:id' element={<Tecno1update />} />
           <Route path='/Faqpage' element={<FaqPage />} />
         </Routes>
         <Footer />
