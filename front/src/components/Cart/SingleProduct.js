@@ -4,7 +4,7 @@ import './Home'
 import { Cart } from './Context'
 import './Cart.css'
 import "swiper/css/free-mode";
-
+// s
 
 const SingleProduct = ({ prod }) => {
 
