@@ -1,28 +1,26 @@
 
 .Shopcontend{
-  position: sticky;
+  position: absolute;
   left: 0 !important;
-  height: 196px;
-  width: 32%;
+  height: 100%;
+  width: 15%;
   transition: 1s;
-  background-color: red;
-  padding: 34px;
+  background-color: white;
   display: flex;
   border-radius: 8px;
   cursor: pointer;
   }
-  .Shopcontend > button{
-    margin: 12px;
-  }
-  .Shopburger li{
-    margin-top: 2rem ;
-    font-weight: bold;
-    font-size: 16px;
-    padding-bottom: 5px;
-}
-.Shopburger{
+.Shopoverlay{
   position: absolute;
-  left: 3rem;
-  top: 1rem;
-  font-size: 30px;
+  left: 100px;
+}
+.Availability{
+  font-size: 12px;
+  font-weight: bold;
+}
+.accordion-item{
+  width: 255px;
+}
+.form-check{
+  width: 255px;
 }
