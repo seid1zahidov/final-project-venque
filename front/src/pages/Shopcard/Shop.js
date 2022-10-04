@@ -12,6 +12,7 @@ import ShoopcartImage from './ShoopcartImage';
 import '../../components/Cart/Cart.css'
 import Shopmap from './Shopmap';
 import Shophome from './Shophome';
+import Short from '../../Modal/Short';
 
 const Shop = () => {
   const [img, Setimg] = useState()
@@ -26,7 +27,7 @@ const Shop = () => {
     Shopimage()
   }, [])
 
-  
+
   const [cart, setCart] = useState([])
   useEffect(() => {
     axios.get('http://localhost:3002/card')
@@ -35,6 +36,7 @@ const Shop = () => {
   }, [])
 
   const [show, setShow] = useState(false)
+  const [showe, setShowe] = useState(false)
 
 
   return (
@@ -63,13 +65,14 @@ const Shop = () => {
         </div>
         <div className="shop_modal_right col-lg-6 text-end">
           <span>SORT BY</span>
-          <BsSortDown />
+          <BsSortDown onClick={() => setShowe((s) => !s)} />
+          <Short show={showe} closeModal={() => setShowe(false)} />
         </div>
       </section>
 
       <section id='Shopcart'>
-      {cart && cart.map((prod => (
-            <Shophome prod={prod} key={prod._id} />
+        {cart && cart.map((prod => (
+          <Shophome prod={prod} key={prod._id} />
         )))}
 
       </section>

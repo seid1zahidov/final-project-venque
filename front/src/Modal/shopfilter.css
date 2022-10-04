@@ -24,3 +24,8 @@
 .form-check{
   width: 255px;
 }
+@media(max-width: 576px){
+  .Shopcontend{
+    height: 20%;
+  }
+}

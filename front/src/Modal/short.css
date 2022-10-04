@@ -1,0 +1,59 @@
+.Shortcontend {
+  position: absolute;
+  right: 0 !important;
+  height: 25%;
+  width: 10%;
+  transition: 1s;
+  background-color: white;
+  display: flex;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.Shopoverlay {
+  position: absolute;
+  left: 100px;
+}
+
+.Availability {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.accordion-item {
+  width: 255px;
+}
+
+.form-check {
+  width: 255px;
+}
+
+@media (max-width: 576px) {
+  .shop_header_top {
+    flex-direction: column;
+  }
+
+  .shop_header_top_left {
+    margin-top: -105px;
+  }
+
+  .shop_header_top_right {
+    margin-top: 10px;
+    margin-right: 59px;
+  }
+
+  .Shortcontend {
+    position: absolute;
+    right: 0 !important;
+    height: 25%;
+    width: 48%;
+    transition: 1s;
+    background-color: white;
+    display: flex;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+}

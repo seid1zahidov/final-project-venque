@@ -129,3 +129,20 @@
 .Community_card_fininsh span{
     font-weight: bold;
 }
+@media(max-width: 576px){
+    .com_main_top_first img{
+        width: 100%;  
+        object-fit: cover;
+        height: 400px;
+        text-align: center;
+    }
+    .Community_img1{
+        flex-direction: column;
+    }
+    .Community_img1_right{
+        margin-top: -10px;
+    } 
+    .Community_img2{
+        flex-direction: column;
+    }
+}
