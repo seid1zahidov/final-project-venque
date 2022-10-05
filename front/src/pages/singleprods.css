@@ -112,3 +112,20 @@
     width: 40%;
     margin-left: 12rem;
 }
+.accordion-items{
+    width: 80%;
+}
+.accordion-body{
+    margin-left: 12rem;
+}
+.cardteails_bodyimg{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 3rem;
+}
+#details-tree_section img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
