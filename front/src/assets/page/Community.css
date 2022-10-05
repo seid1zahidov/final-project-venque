@@ -4,34 +4,41 @@
     object-fit: cover;
     height: 600px;
 }
+
 #Community_main {
-    margin-top: 2rem;
+    margin-top: -1rem;
 }
+
 #Community_main p {
     position: absolute;
     top: 0;
     left: 45%;
     font-size: 13px;
 }
+
 .Community_img1 {
     margin-top: 7rem;
     display: flex;
 }
+
 .com_main_top_first_img img {
     width: 100%;
     height: 570px;
     object-fit: cover;
 }
+
 .Community_img1_right h1 {
     margin-top: 10rem;
     margin-left: 3rem;
     font-size: 28px;
 }
+
 .Community_img1_right span {
     margin-top: 10rem;
     margin-left: 3rem;
     font-size: 13px;
 }
+
 .Community_img1_right button {
     margin-left: 3rem;
     margin-top: 3rem;
@@ -40,41 +47,168 @@
     background-color: transparent;
     border: 1px solid;
 }
+
 .Community_img1_right button:hover {
     background-color: black;
     color: #fff;
     transition: .7s;
 }
+
+.Community_img1_right2 h1 {
+    margin-top: 10rem;
+    margin-left: 3rem;
+    font-size: 28px;
+}
+
+.Community_img1_right2 span {
+    margin-top: 10rem;
+    margin-left: 3rem;
+    font-size: 13px;
+}
+
+.Community_img1_right2 button {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    padding: 15px 100px 15px 100px;
+    font-size: 11px;
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.Community_img1_right2 button:hover {
+    background-color: black;
+    color: #fff;
+    transition: .7s;
+}
+
+.Community_img1_right3 h1 {
+    margin-top: 10rem;
+    margin-left: 3rem;
+    font-size: 28px;
+}
+
+.Community_img1_right3 span {
+    margin-top: 10rem;
+    margin-left: 3rem;
+    font-size: 13px;
+}
+
+.Community_img1_right3 button {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    padding: 15px 100px 15px 100px;
+    font-size: 11px;
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.Community_img1_right3 button:hover {
+    background-color: black;
+    color: #fff;
+    transition: .7s;
+}
+
+.Community_img1_right4 h1 {
+    margin-top: 10rem;
+    margin-left: 3rem;
+    font-size: 28px;
+}
+
+.Community_img1_right4 span {
+    margin-top: 10rem;
+    margin-left: 3rem;
+    font-size: 13px;
+}
+
+.Community_img1_right4 button {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    padding: 15px 100px 15px 100px;
+    font-size: 11px;
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.Community_img1_right5 h1 {
+    margin-top: 10rem;
+    margin-left: 3rem;
+    font-size: 28px;
+}
+
+.Community_img1_right5 span {
+    margin-top: 10rem;
+    margin-left: 3rem;
+    font-size: 13px;
+}
+
+.Community_img1_right5 button {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    padding: 15px 100px 15px 100px;
+    font-size: 11px;
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.Community_img1_right6 h1 {
+    margin-top: 10rem;
+    margin-left: 3rem;
+    font-size: 28px;
+}
+
+.Community_img1_right6 span {
+    margin-top: 10rem;
+    margin-left: 3rem;
+    font-size: 13px;
+}
+
+.Community_img1_right6 button {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    padding: 15px 100px 15px 100px;
+    font-size: 11px;
+    background-color: transparent;
+    border: 1px solid;
+}
+
+
 .com_main_top_first_img2 img {
     width: 100%;
     height: 570px;
     object-fit: cover;
 }
+
 .Community_img2 {
     display: flex;
 }
+
 #Cominity_main_top_phot {
     position: relative;
 }
+
 .com_main_top_first1_son1 img {
     margin-top: 5rem;
     position: relative;
     width: 100%;
 }
+
 .community_photo_text {
     text-align: center;
     position: absolute;
     top: 300rem;
     left: 41rem;
 }
+
 .community_photo_text h2 {
     color: #fff;
     font-size: 35px;
 }
+
 .community_photo_text span {
     color: #fff;
     font-size: 15px;
 }
+
 .community_photo_text button {
     padding: 13px 90px 13px 90px;
     background-color: transparent;
@@ -82,67 +216,126 @@
     color: #fff;
     font-size: 13px;
 }
+
 .com_main_bottom_first1_son1 img {
     width: 100%;
     height: 570px;
     object-fit: cover;
 }
+
 .community_photo_text_bottom {
     position: absolute;
     top: 345rem;
     left: 3rem;
 }
-.community_photo_text_bottom button{
+
+.community_photo_text_bottom button {
     padding: 13px 90px 13px 90px;
     background-color: transparent;
     border: 1px solid #fff;
     color: #fff;
     font-size: 13px;
 }
-.community_photo_text_bottom h2{
+
+.community_photo_text_bottom h2 {
     color: #fff;
 
 }
-.community_photo_text_bottom span{
+
+.community_photo_text_bottom span {
     color: #fff;
 }
-.Blog_post{
+
+.Blog_post {
     text-align: center;
     margin-top: 8rem;
     margin-bottom: 3rem;
 }
-.Communiy_card img{
+
+.Communiy_card img {
     width: 100%;
 }
-.Communiy_card{
-    display:  flex;
+
+.Communiy_card {
+    display: flex;
 }
-.Community_card_fininsh img{
+
+.Community_card_fininsh img {
     width: 100%;
 }
-.Community_card_fininsh{
-    width:25%;
+
+.Community_card_fininsh {
+    width: 25%;
 }
-.Community_card_fininsh h6{
-    font-weight:400;
+
+.Community_card_fininsh h6 {
+    font-weight: 400;
 }
-.Community_card_fininsh span{
+
+.Community_card_fininsh span {
     font-weight: bold;
 }
-@media(max-width: 576px){
-    .com_main_top_first img{
-        width: 100%;  
+
+#Community_main {
+
+
+}
+
+@media(max-width: 576px) {
+    .com_main_top_first img {
+        width: 100%;
         object-fit: cover;
         height: 400px;
         text-align: center;
     }
-    .Community_img1{
+
+    .Community_img1 {
         flex-direction: column;
     }
-    .Community_img1_right{
+
+    .Community_img1_right {
         margin-top: -10px;
-    } 
-    .Community_img2{
+    }
+
+    .Community_img2 {
         flex-direction: column;
     }
+
+    .Community_img1_right {
+        margin-top: -9rem;
+    }
+
+    .Community_img1_right h1 {
+        margin-top: 10rem;
+        font-size: 28px;
+    }
+    .Community_img1_right span{
+        margin-top: 10rem !important;
+        margin-left: 0px !important;
+        font-size: 13px !important;
+    }
+    .Community_img1_right2{
+        margin-top: 42rem;
+        position: absolute;
+    }
+    .Community_img1_right2 h1 {
+        margin-top: 10rem;
+        font-size: 28px;
+    }
+    .Community_img1_right2 span{
+        margin-top: 10rem !important;
+        margin-left: 0px !important;
+        font-size: 13px !important;
+    }
+    .com_main_top_first_img2 img{
+        width: 100%;
+        height: 570px;
+        object-fit: cover;
+        margin-top: 16em;
+    }
+    .com_main_top_first_img2 {
+        margin-top: -156px;
+    }
+
 }
+

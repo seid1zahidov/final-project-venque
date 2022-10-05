@@ -139,7 +139,7 @@ const Community = () => {
               )))
             }
           </div>
-          <div className="col-lg-6 Community_img1_right">
+          <div className="col-lg-6 Community_img1_right2">
             <h1>ANDY</h1>
             <span>Andy is a Los Angeles, USA-based photographer specializing in travel and landscape photography. He has traveled to many  </span>
             <span>locations with our backpacks (Transit Travel Pro, Metro Classic, Campus Classic, and Alpine Rucksack).</span> <br />
@@ -158,7 +158,7 @@ const Community = () => {
               )))
             }
           </div>
-          <div className="col-lg-6 Community_img1_right">
+          <div className="col-lg-6 Community_img1_right3">
             <h1>ANDY</h1>
             <span>Andy is a Los Angeles, USA-based photographer specializing in travel and landscape photography. He has traveled to many  </span>
             <span>locations with our backpacks (Transit Travel Pro, Metro Classic, Campus Classic, and Alpine Rucksack).</span> <br />
@@ -178,7 +178,7 @@ const Community = () => {
               )))
             }
           </div>
-          <div className="col-lg-6 Community_img1_right">
+          <div className="col-lg-6 Community_img1_right4">
             <h1>ANDY</h1>
             <span>Andy is a Los Angeles, USA-based photographer specializing in travel and landscape photography. He has traveled to many  </span>
             <span>locations with our backpacks (Transit Travel Pro, Metro Classic, Campus Classic, and Alpine Rucksack).</span> <br />
@@ -197,7 +197,7 @@ const Community = () => {
               )))
             }
           </div>
-          <div className="col-lg-6 Community_img1_right">
+          <div className="col-lg-6 Community_img1_right5">
             <h1>ANDY</h1>
             <span>Andy is a Los Angeles, USA-based photographer specializing in travel and landscape photography. He has traveled to many  </span>
             <span>locations with our backpacks (Transit Travel Pro, Metro Classic, Campus Classic, and Alpine Rucksack).</span> <br />
@@ -216,7 +216,7 @@ const Community = () => {
               )))
             }
           </div>
-          <div className="col-lg-6 Community_img1_right">
+          <div className="col-lg-6 Community_img1_right6">
             <h1>ANDY</h1>
             <span>Andy is a Los Angeles, USA-based photographer specializing in travel and landscape photography. He has traveled to many  </span>
             <span>locations with our backpacks (Transit Travel Pro, Metro Classic, Campus Classic, and Alpine Rucksack).</span> <br />
