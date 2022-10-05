@@ -26,11 +26,11 @@ const SingleProduct = ({ prod }) => {
       </div>
       <Stack direction="row" spacing={2}>
         {cart.includes(prod) ? (
-          <button type='button'  className='btn btn-secondary btn-sm' onClick={() => { setCart(cart.filter(c => c._id !== prod._id)) }}>
+          <button type='button' className='btn btn-secondary btn-sm' onClick={() => { setCart(cart.filter(c => c._id !== prod._id)) }}>
             Remove to cart
           </button>
         ) : (
-          <button type='button' className='btn btn-secondary btn-sm'  onClick={() => { setCart([ prod]) }}>
+          <button type='button' className='btn btn-secondary btn-sm' onClick={() => { setCart([prod]) }}>
             Add to cart
           </button>
         )}

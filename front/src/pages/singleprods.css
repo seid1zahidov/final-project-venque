@@ -1,5 +1,36 @@
 .elo{
     width: 90%;
-    margin-left: 80px;
+    margin-left: 75px;
     margin-top: 5rem;
+}
+#details_photo{
+    display: flex;
+}
+.cartdetails_{
+    margin-left: 12rem;
+    margin-top: 10rem;
+    font-size: 27px;
+    font-weight: bold;
+}
+.products_details p{
+    font-size: 13px;
+    margin-left: 12rem;
+}
+.products_details h2{
+    margin-left: 12rem;
+}
+.products_details span{
+    margin-left: 12rem;
+    font-size: 20px;
+    font-weight: 400;
+}
+.dropdown{
+    margin-left: 12rem;
+    margin-top: 1rem;
+}
+.details-selec-option{
+    margin-left: 12rem;
+    margin-top: 1rem;
+    padding: 10px 37px 10px 37px;
+    border: 1px solid blanchedalmond;
 }
