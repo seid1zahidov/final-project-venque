@@ -5,6 +5,8 @@ import { Cart } from './Context'
 import './Cart.css'
 import "swiper/css/free-mode";
 // s
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack'
 
 const SingleProduct = ({ prod }) => {
 
@@ -22,13 +24,22 @@ const SingleProduct = ({ prod }) => {
         <p>${prod.price}.00</p>
         <p className='rate'>{prod.rate}</p>
       </div>
-      {cart.includes(prod) ? (
-        <button className='add' onClick={() => { setCart(cart.filter(c => c._id !== prod._id)) }}>Remove to Carts</button>
-      ) : (
-        <button className='add' onClick={() => { setCart([...cart, prod]) }}>Add to Carts</button>
-      )}
+      <Stack direction="row" spacing={2}>
+        {cart.includes(prod) ? (
+          <button type='button'  className='btn btn-secondary btn-sm' onClick={() => { setCart(cart.filter(c => c._id !== prod._id)) }}>
+            Remove to cart
+          </button>
+        ) : (
+          <button type='button' className='btn btn-secondary btn-sm'  onClick={() => { setCart([...cart, prod]) }}>
+            Add to cart
+          </button>
+        )}
+
+      </Stack>
+
     </div>
   )
 }
-
+// 
+// 
 export default SingleProduct

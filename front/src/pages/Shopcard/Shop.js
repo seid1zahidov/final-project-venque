@@ -74,7 +74,6 @@ const Shop = () => {
         {cart && cart.map((prod => (
           <Shophome prod={prod} key={prod._id} />
         )))}
-
       </section>
     </section>
   )
