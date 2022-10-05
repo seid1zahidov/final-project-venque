@@ -4,17 +4,17 @@ import Shop from './Shop'
 import SingleProd from './SingleProd'
 
 const Singleprodmap = () => {
-    const [cart, setCart] = useState([])
+    const [carts, setCart] = useState([])
     useEffect(() => {
         axios.get('http://localhost:3002/card')
-            .then(cart => setCart(cart.data.card))
+            .then(carte => setCart(carte.data.card))
             .catch(e => console.log(e))
-    }, [])
+    },[])
 
     return (
         <div>
-            {cart && cart.map((prod => (
-                <SingleProd prod={prod} key={prod._id} />
+            {carts && carts.map((prod => (
+                <SingleProd prod={prod} key={prod._id}  />
             )))}
 
         </div>

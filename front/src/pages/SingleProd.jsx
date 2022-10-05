@@ -6,8 +6,9 @@ import { useEffect } from 'react'
 import Loader from "../components/Loader"
 import { width } from '@mui/system'
 import { Cart } from '../components/Cart/Context'
-
 import './singleprods.css'
+import Button from '@mui/material/Button';
+
 function reducer(state, action) {
     switch (action.type) {
         case 'fetch_request':
@@ -19,9 +20,9 @@ function reducer(state, action) {
     }
 }
 
-const SingleProd = ({ prod }) => {
+const SingleProd = ( {prod}) => {
+  const { cart, setCart } = useContext(Cart)
 
-    const { cart, setCart } = useContext(Cart)
 
     const [{ loading, singleproduct }, dispatch] = useReducer(reducer, {
         loading: true,
@@ -34,10 +35,7 @@ const SingleProd = ({ prod }) => {
     useEffect(() => {
 
         const getProduct = async () => {
-            console.log(id);
             dispatch({ type: 'fetch_request' })
-
-
             try {
                 const resp = await axios.get(`http://localhost:3002/Card/product/${id}`);
                 dispatch({ type: 'fetch_success', payload: resp.data })
@@ -75,11 +73,13 @@ const SingleProd = ({ prod }) => {
                             <option value="">8</option>
                             <option value="">9</option>
                             <option value="">10</option>
-                        </select>
-
-
+                        </select> <br />
+                            <button class="glow-on-hover cart_single" onClick={() => { setCart([singleproduct]) }} type="button">Add to cart</button>
+                            <button class="glow-on-hover cart_singles"  type="button">Buy it now</button>
+                            <img className='detailsimg' src="https://cdn.shopify.com/s/files/1/1592/8017/files/website-icon-wiget_d7191648-b959-4125-9ce7-308d4b389425.jpg?v=1650296931" alt="" />
                     </div>
                 </section>
+                
             </section>
         </>
     )

@@ -13,7 +13,6 @@ const Modalcard = ({ prod }) => {
 
     const { cart, setCart } = useContext(Cart)
 
-    console.log(prod);
     return (
         <div className="rowss">
             <div className="col-12 modal_card_main">
