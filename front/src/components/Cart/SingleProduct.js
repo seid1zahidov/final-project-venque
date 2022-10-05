@@ -30,7 +30,7 @@ const SingleProduct = ({ prod }) => {
             Remove to cart
           </button>
         ) : (
-          <button type='button' className='btn btn-secondary btn-sm'  onClick={() => { setCart([...cart, prod]) }}>
+          <button type='button' className='btn btn-secondary btn-sm'  onClick={() => { setCart([ prod]) }}>
             Add to cart
           </button>
         )}

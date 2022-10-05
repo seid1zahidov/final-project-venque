@@ -19,7 +19,7 @@ const Card = ({ show, closeModal }) => {
 
 
     return (
-        <div className='card'>
+        <div style={{zIndex:"999"}} className='card'>
             <div className="card__header">
                 <div className="col-lg-6 card__headear_left">
                     <h3>CART</h3>
@@ -41,7 +41,7 @@ const Card = ({ show, closeModal }) => {
                     <p>Shipping, taxes, and discount codes are calculat</p>
                     <span>${total}.00</span>
                 </div>
-                <button>Checkout</button>
+                <button>Checkout</button>1
             </div>
         </div>
     )

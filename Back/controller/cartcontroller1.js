@@ -95,8 +95,22 @@ const deleteCart = async (req,res,next) => {
   }
 }
 
+const getSingleProduct=async(req,res,next)=>{
+    const id = req.params.id;
+    let card;
+    try {
+      card = await Card.findById(id)
+      res.send(card)
+    } 
+    catch (error) {
+        console.log(err);
+    }
+   
+}
+
 exports.getAllcart = getAllcart;
 exports.addCart = addCart;
 exports.getById = getById;
 exports.updateCart = updateCart;
 exports.deleteCart = deleteCart;
+exports.getSingleProduct=getSingleProduct;

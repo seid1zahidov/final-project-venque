@@ -58,6 +58,7 @@ import FaqPage from './pages/FaqPage';
 import Tecno1Details from './pages/TecnologyAdmin/Tecno1/Tecno1Details';
 import Tecno1Add from './pages/TecnologyAdmin/Tecno1/Tecno1Add';
 import Tecno1update from './pages/TecnologyAdmin/Tecno1/Tecno1update';
+import SingleProd from './pages/SingleProd';
 
 function App() {
   return (
@@ -122,6 +123,7 @@ function App() {
           <Route path='/Tecno1Add' element={<Tecno1Add />} />
           <Route path='/Tecno1update/:id' element={<Tecno1update />} />
           <Route path='/Faqpage' element={<FaqPage />} />
+          <Route path='/product/:id' element={<SingleProd/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
