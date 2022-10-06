@@ -59,6 +59,7 @@ import Tecno1Details from './pages/TecnologyAdmin/Tecno1/Tecno1Details';
 import Tecno1Add from './pages/TecnologyAdmin/Tecno1/Tecno1Add';
 import Tecno1update from './pages/TecnologyAdmin/Tecno1/Tecno1update';
 import SingleProd from './pages/SingleProd';
+import Singleprodindex from './pages/Singleprodindex';
 
 function App() {
   return (
@@ -124,6 +125,7 @@ function App() {
           <Route path='/Tecno1update/:id' element={<Tecno1update />} />
           <Route path='/Faqpage' element={<FaqPage />} />
           <Route path='/product/:id' element={<SingleProd/>}/>
+          <Route path='/product/:id' element={<Singleprodindex/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

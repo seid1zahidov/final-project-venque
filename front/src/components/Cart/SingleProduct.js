@@ -25,15 +25,7 @@ const SingleProduct = ({ prod }) => {
         <p className='rate'>{prod.rate}</p>
       </div>
       <Stack direction="row" spacing={2}>
-        {cart.includes(prod) ? (
-          <button type='button' className='btn btn-secondary btn-sm' onClick={() => { setCart(cart.filter(c => c._id !== prod._id)) }}>
-            Remove to cart
-          </button>
-        ) : (
-          <button type='button' className='btn btn-secondary btn-sm' onClick={() => { setCart([prod]) }}>
-            Add to cart
-          </button>
-        )}
+       
 
       </Stack>
 

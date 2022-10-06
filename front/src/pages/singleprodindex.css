@@ -1,0 +1,131 @@
+.elo{
+    width: 90%;
+    margin-left: 75px;
+    margin-top: 5rem;
+}
+#details_photo{
+    display: flex;
+}
+.cartdetails_{
+    margin-left: 12rem;
+    
+    margin-top: 10rem;
+    font-size: 27px;
+    font-weight: bold;
+}
+.products_details p{
+    font-size: 13px;
+    margin-left: 12rem;
+}
+.products_details h2{
+    margin-left: 12rem;
+}
+.products_details span{
+    margin-left: 12rem;
+    font-size: 20px;
+    font-weight: 400;
+}
+.dropdown{
+    margin-left: 12rem;
+    margin-top: 1rem;
+}
+.details-selec-option{
+    margin-left: 12rem;
+    margin-top: 1rem;
+    padding: 10px 37px 10px 37px;
+    border: 1px solid blanchedalmond;
+}
+.cart_single{
+    margin-left: 12rem;
+    margin-top: 2rem;
+    padding: 12px 65px 12px 65px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+.glow-on-hover {
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.cart_singles{
+    margin-top: 2rem;
+    padding: 12px 65px 12px 65px;
+    background-color: transparent;
+    border: 1px solid black;
+    margin-left: 2rem;
+}
+.detailsimg{
+    margin-top: 2rem;
+    width: 40%;
+    margin-left: 12rem;
+}
+.accordion-items{
+    width: 80%;
+}
+.accordion-body{
+    margin-left: 12rem;
+}
+.cardteails_bodyimg{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 3rem;
+}
+#details-tree_section img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}

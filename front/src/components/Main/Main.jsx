@@ -111,7 +111,7 @@ const Main = () => {
                 <div className='mt-5'>
                     <div className="p6row">
                         <div>
-                            <img className='p6left' src={image3} alt="sekil" />
+                            <img className='p6left' src="https://cdn.shopify.com/s/files/1/1592/8017/files/DSC00990_900x.jpg?v=1647537586" alt="sekil" />
                         </div>
                         <div className="col-lg-6    ">
                             <div className="p6position">
@@ -120,7 +120,7 @@ const Main = () => {
                                 <button>VIEW PRODUCTS</button>
                             </div>
                             <div>
-                                <img className='p6lefts' src={image3} alt="sekil" />
+                                <img className='p6lefts' src="https://cdn.shopify.com/s/files/1/1592/8017/files/DSC02675_ddc2290a-77e5-49a7-98ca-a9b5dbbaeb57.jpg?v=1647537497" alt="sekil" />
                             </div>
                         </div>
                     </div>
@@ -131,14 +131,14 @@ const Main = () => {
                 <div className='mt-5'>
                     <div className="p7row">
                         <div>
-                            <img className='p6left' src={image3} alt="sekil" />
+                            <img className='p6left' src="https://cdn.shopify.com/s/files/1/1592/8017/files/DSC02675_ddc2290a-77e5-49a7-98ca-a9b5dbbaeb57.jpg?v=1647537497" alt="sekil" />
                         </div>
                         <div className="col-lg-6">
                             <div className="p7position">
                                 <h3>COAST TO COAST</h3>
                             </div>
                             <div>
-                                <img className='p7left' src={image3} alt="sekil" />
+                                <img className='p7left' src={'https://cdn.shopify.com/s/files/1/1592/8017/files/DSC01910_1.jpg?v=1647537719'} alt="sekil" />
                             </div>
                         </div>
                     </div>
@@ -150,7 +150,7 @@ const Main = () => {
                     <div className="p8row">
                         <div className="col-lg-6">
                             <div>
-                                <img className='p8left' src={image3} alt="sekil" />
+                                <img className='p8left' src={"https://cdn.shopify.com/s/files/1/1592/8017/files/IMG_6173-Edit_1.jpg?v=1647537467"} alt="sekil" />
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -158,7 +158,7 @@ const Main = () => {
                                 <h3>FROM ARCTIC TO ANTARCTICA</h3>
                                 <button>VIEW PRODUCTS</button>
                             </div>
-                            <img className='p8left' src={image3} alt="sekil" />
+                            <img className='p8left' src={"https://cdn.shopify.com/s/files/1/1592/8017/files/DSC05284_copy_9bf77071-3241-4d94-ad66-875c70e54048.jpg?v=1647537692"} alt="sekil" />
                         </div>
                     </div>
                 </div>
