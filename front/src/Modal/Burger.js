@@ -25,25 +25,25 @@ const Burger = () => {
                 <Offcanvas.Body>
                         <ul className='burgerul'>
                             <li>AMOO APPAREL</li>
-                            <Link to='./Shop'>
+                            <Link className='metin' to='./Shop'>
                                 <li>Shop_All</li>
                             </Link>
                             <li>COLLECTIONS</li>
                             <li>SUSTAINABILITY</li>
                             <li>SALE</li>
-                            <Link to="/Technology">
+                            <Link  className='metin' to="/Technology">
                                 <li>TECNOLOGY</li>
                             </Link>
-                            <Link to='/Community'>
+                            <Link  className='metin' to='/Community'>
                                 <li>VENQUE COMMUNITY</li>
                             </Link>
-                            <Link to='/About'>
+                            <Link  className='metin' to='/About'>
                                 <li>ABOUT</li>
                             </Link>
-                            <Link to='/Help'>
+                            <Link  className='metin' to='/Help'>
                                 <li>HELP</li>
                             </Link>
-                            <Link to='/Faqpage'>
+                            <Link  className='metin' to='/Faqpage'>
                                 <li>Faq</li>
                             </Link>
                         </ul>

@@ -99,7 +99,10 @@
   position: absolute;
   bottom: 0;
 }
-
+.metin{
+  text-decoration: none;
+  color: black;
+}
 
 
 
