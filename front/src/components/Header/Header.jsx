@@ -54,7 +54,6 @@ const Header = () => {
                   <SingleProduct prod={cardss} key={cardss._id} />
                 )))}
                 <input onChange={SearcHandler} className="search" type="text" placeholder="search" />
-
               </div>
             </div>
           </div>

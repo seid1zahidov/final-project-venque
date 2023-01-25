@@ -20,7 +20,7 @@ const Com11 = require('./routes/community11toutes');
 const support = require('./routes/supporoutes');
 const tecnoroute1 = require('./routes/tecnoroute/firstroute');
 const bodyParser = require('body-parser');
-
+//s
 
 const app = express();
 
