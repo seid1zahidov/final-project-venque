@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/final-project-venque/static/css/main.01d5fec3.css",
+    "main.js": "/final-project-venque/static/js/main.55e7c35a.js",
+    "index.html": "/final-project-venque/index.html",
+    "main.01d5fec3.css.map": "/final-project-venque/static/css/main.01d5fec3.css.map",
+    "main.55e7c35a.js.map": "/final-project-venque/static/js/main.55e7c35a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01d5fec3.css",
+    "static/js/main.55e7c35a.js"
+  ]
+}
