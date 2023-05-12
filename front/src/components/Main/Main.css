@@ -114,8 +114,8 @@
 .p6lefts{
     height: 778px;
     object-fit: cover;
-    margin-left: 20rem;
     width: 100%;
+    margin-left: 15rem;
 }
 .p6row{
     display: flex;
@@ -152,7 +152,7 @@
     height: 778px;
     object-fit: cover;
     width: 100%;
-    margin-left: 20rem;
+    margin-left: 15rem;
 }
 .p7row{
     margin-top: -50px;
